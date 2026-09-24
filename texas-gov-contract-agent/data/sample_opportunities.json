@@ -1,0 +1,808 @@
+{
+ "_note": "SAMPLE DATA for `python main.py demo`. Every record is made up (solicitation numbers start with DEMO-, agencies say (sample)). Deadlines are relative to the day you run the demo. Never loaded into your real database.",
+ "opportunities": [
+  {
+   "source": "dallas_city",
+   "source_id": "DEMO-DAL-JAN-0412",
+   "solicitation_number": "DEMO-DAL-JAN-0412",
+   "title": "Janitorial Services for Three Library Branches (sample)",
+   "url": "https://dallascityhall.bonfirehub.com/portal/?tab=openOpportunities",
+   "agency": "City of Dallas (sample)",
+   "office": "Office of Procurement Services",
+   "city": "Dallas",
+   "market": "dfw",
+   "jurisdiction": "city",
+   "naics": "561720",
+   "procurement_type": "Invitation for Bid",
+   "estimated_value": 240000,
+   "value_basis": "Estimated annual value stated in the bid packet",
+   "deadline_in_days": 25,
+   "posted_days_ago": 4,
+   "description": "The City seeks a contractor for nightly janitorial services at three branch libraries (about 62,000 square feet in total): restroom cleaning, trash removal, dusting, floor care, and quarterly strip and wax. Initial term of three (3) years with two one-year renewal options. An M/WBE participation goal of 25% applies, and bidders must list all proposed subcontractors on the participation form. Contractor shall maintain commercial general liability insurance of $1,000,000 per occurrence and workers' compensation. Vendors must be registered with the Texas Secretary of State. An optional pre-bid conference will be held at the Central Library. Questions are due ten days before bids are due. Submit three (3) references for similar work.",
+   "attachments": [
+    {
+     "name": "Specifications and pricing form.pdf",
+     "url": ""
+    }
+   ],
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "Last time: Metroplex Building Care LLC (sample) won the 2023 library janitorial bid at about $212K a year.",
+     "previous_winner": "Metroplex Building Care LLC (sample)",
+     "previous_award": 212000,
+     "contract_period": "Jun 2023 to May 2026",
+     "exact": [],
+     "similar": [],
+     "local_matches": [
+      {
+       "title": "Janitorial Services for Library Branches (sample, 2023)",
+       "reference": "DEMO-DAL-2023-118",
+       "closed": "2023-04-18",
+       "status": "Awarded",
+       "url": "https://dallascityhall.bonfirehub.com/portal/?tab=pastOpportunities",
+       "source": "City of Dallas"
+      }
+     ],
+     "awards_url": "https://dallascityhall.bonfirehub.com/portal/?tab=pastOpportunities",
+     "number_of_similar_awards": 0,
+     "median_similar_award": null,
+     "distinct_winners": [],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "sam",
+   "source_id": "DEMO-VA-561720-26",
+   "solicitation_number": "DEMO-VA-561720-26",
+   "title": "Janitorial Services, VA Outpatient Clinic, Fort Worth (sample)",
+   "url": "https://sam.gov/search/?index=opp",
+   "agency": "Veterans Affairs, Department Of (sample)",
+   "office": "Network Contracting Office 17",
+   "city": "Fort Worth",
+   "market": "dfw",
+   "jurisdiction": "federal",
+   "naics": "561720",
+   "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
+   "set_aside_code": "SBA",
+   "procurement_type": "Combined Synopsis/Solicitation",
+   "notice_type": "solicitation",
+   "estimated_value": 410000,
+   "value_basis": "Estimated from the prior contract amount",
+   "deadline_in_days": 17,
+   "posted_days_ago": 6,
+   "place_of_performance": "Fort Worth, TX",
+   "description": "Janitorial and custodial services for a 48,000 square foot VA outpatient clinic, one base year and four option years. FAR 52.219-14 Limitations on Subcontracting applies. The Service Contract Labor Standards clause (52.222-41) and the attached wage determination apply. Contractor must be enrolled in E-Verify (52.222-54). All contractor employees require background investigations before starting work. Performance will be monitored under a Quality Assurance Surveillance Plan. Offerors shall submit past performance information for up to three recent contracts. The incumbent contractor is Lone Star Facility Services LLC (sample).",
+   "raw": {
+    "demo": true,
+    "point_of_contact": [
+     {
+      "fullName": "Contracting Officer (sample)",
+      "email": "co.sample@example.gov"
+     }
+    ],
+    "award_history_seed": {
+     "summary": "Last time: Lone Star Facility Services LLC (sample) held this contract at $389.5K for Oct 2021 to Sep 2026.",
+     "previous_winner": "Lone Star Facility Services LLC (sample)",
+     "previous_award": 389500,
+     "contract_period": "2021-10-01 to 2026-09-30",
+     "exact": [
+      {
+       "award_id": "DEMO-36C257-21-C-0101",
+       "recipient": "Lone Star Facility Services LLC (sample)",
+       "amount": 389500,
+       "start": "2021-10-01",
+       "end": "2026-09-30",
+       "agency": "Department of Veterans Affairs",
+       "sub_agency": "",
+       "description": "",
+       "url": "https://www.usaspending.gov/search",
+       "source": "Sample"
+      }
+     ],
+     "similar": [
+      {
+       "award_id": "DEMO-36C257-22-C-0311",
+       "recipient": "North Texas Custodial Group (sample)",
+       "amount": 512000,
+       "start": "2022-04-01",
+       "end": "2027-03-31",
+       "agency": "Department of Veterans Affairs",
+       "sub_agency": "",
+       "description": "",
+       "url": "https://www.usaspending.gov/search",
+       "source": "Sample"
+      },
+      {
+       "award_id": "DEMO-36C257-20-C-0077",
+       "recipient": "Lone Star Facility Services LLC (sample)",
+       "amount": 301000,
+       "start": "2020-01-01",
+       "end": "2024-12-31",
+       "agency": "Department of Veterans Affairs",
+       "sub_agency": "",
+       "description": "",
+       "url": "https://www.usaspending.gov/search",
+       "source": "Sample"
+      },
+      {
+       "award_id": "DEMO-W9126G-23-C-0045",
+       "recipient": "Trinity Clean Co. (sample)",
+       "amount": 188000,
+       "start": "2023-02-01",
+       "end": "2026-01-31",
+       "agency": "Department of Defense",
+       "sub_agency": "",
+       "description": "",
+       "url": "https://www.usaspending.gov/search",
+       "source": "Sample"
+      }
+     ],
+     "local_matches": [],
+     "awards_url": "",
+     "number_of_similar_awards": 6,
+     "median_similar_award": 275000,
+     "distinct_winners": [
+      "Lone Star Facility Services LLC (sample)",
+      "North Texas Custodial Group (sample)",
+      "Trinity Clean Co. (sample)"
+     ],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "harris_county",
+   "source_id": "DEMO-HC-PW-0917",
+   "solicitation_number": "DEMO-HC-PW-0917",
+   "title": "Pressure Washing of Parking Garages and Plazas (sample)",
+   "url": "https://harriscountytx.bonfirehub.com/portal/?tab=openOpportunities",
+   "agency": "Harris County (sample)",
+   "office": "Office of the Purchasing Agent",
+   "city": "Houston",
+   "market": "houston",
+   "jurisdiction": "county",
+   "naics": "561790",
+   "procurement_type": "Request for Bid",
+   "estimated_value": 95000,
+   "value_basis": "Budget stated in the solicitation",
+   "deadline_in_days": 22,
+   "posted_days_ago": 3,
+   "description": "Quarterly pressure washing of four county parking garages and two downtown plazas, with water reclamation to meet storm water rules. One-year term with renewals. Subcontractors require prior written approval of the County before starting work. Contractor shall carry general liability of $1,000,000 and automobile liability of $1,000,000. Work is performed overnight between 10 p.m. and 5 a.m. to avoid garage traffic, with cones and signage placed by the contractor. Oil stains and gum are pre-treated before washing. The contractor must capture wash water and dispose of it at an approved facility, and submit a disposal log with each invoice. The County's facilities manager inspects each garage after service; areas that fail inspection are re-washed at no charge within five days.",
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "A similar 2024 solicitation closed on the county's portal; open it to see the award.",
+     "previous_winner": "",
+     "previous_award": null,
+     "contract_period": "",
+     "exact": [],
+     "similar": [],
+     "local_matches": [
+      {
+       "title": "Garage Pressure Washing (sample, 2024)",
+       "reference": "DEMO-HC-2024-0551",
+       "closed": "2024-08-09",
+       "status": "Awarded",
+       "url": "https://harriscountytx.bonfirehub.com/portal/?tab=pastOpportunities",
+       "source": "Harris County"
+      }
+     ],
+     "awards_url": "https://harriscountytx.bonfirehub.com/portal/?tab=pastOpportunities",
+     "number_of_similar_awards": 0,
+     "median_similar_award": null,
+     "distinct_winners": [],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "dallas_county",
+   "source_id": "DEMO-DC-PC-0212",
+   "solicitation_number": "DEMO-DC-PC-0212",
+   "title": "Post-Construction Cleaning, Records Building Renovation (sample)",
+   "url": "https://www.dallascounty.org/departments/purchasing/current-business-ops.php",
+   "agency": "Dallas County (sample)",
+   "office": "Purchasing Department",
+   "city": "Dallas",
+   "market": "dfw",
+   "jurisdiction": "county",
+   "naics": "561720",
+   "procurement_type": "Request for Quote",
+   "estimated_value": 65000,
+   "value_basis": "Engineer's estimate in the solicitation",
+   "deadline_in_days": 15,
+   "posted_days_ago": 2,
+   "description": "Rough clean and final clean of three renovated floors in the Records Building after construction: dust removal, window and glass cleaning, floor scrubbing, and debris haul-off. Subcontracting opportunities are encouraged; list each subcontractor and its certification. Contractor shall carry general liability of $1,000,000 and workers' compensation. Work is scheduled in three phases as each floor is released by the general contractor, with a final walk-through by the County's project manager after each phase. Deficiencies noted at walk-through must be corrected within 48 hours. The contractor provides all cleaning equipment and supplies, and must follow the building's after-hours access and badge procedures. Pricing is lump sum per floor.",
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "No machine-readable award history for this agency. Check the official bid tabulations.",
+     "previous_winner": "",
+     "previous_award": null,
+     "contract_period": "",
+     "exact": [],
+     "similar": [],
+     "local_matches": [],
+     "awards_url": "https://www.dallascounty.org/departments/purchasing/",
+     "number_of_similar_awards": 0,
+     "median_similar_award": null,
+     "distinct_winners": [],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "fort_worth_city",
+   "source_id": "DEMO-FW-TREE-0301",
+   "solicitation_number": "DEMO-FW-TREE-0301",
+   "title": "Tree Trimming, Removal, and Stump Grinding in City Parks (sample)",
+   "url": "https://fortworthtexas.bonfirehub.com/portal/?tab=openOpportunities",
+   "agency": "City of Fort Worth (sample)",
+   "office": "Park & Recreation",
+   "city": "Fort Worth",
+   "market": "dfw",
+   "jurisdiction": "city",
+   "naics": "561730",
+   "procurement_type": "Invitation to Bid",
+   "estimated_value": 140000,
+   "value_basis": "Annual not-to-exceed amount",
+   "deadline_in_days": 28,
+   "posted_days_ago": 5,
+   "description": "As-needed tree trimming, hazardous tree removal, and stump grinding across city parks. Work must be supervised by an ISA Certified Arborist. The contractor shall furnish all equipment, labor, and traffic control. Bidders must list any subcontractors they intend to use. General liability insurance of $2,000,000 is required. Work orders are issued by the Park & Recreation Department with a 10 business day completion window, or 24 hours for storm-damaged trees blocking trails. The contractor removes and disposes of all brush and wood, grinds stumps 8 inches below grade, and backfills with topsoil. Pricing is by tree diameter class and per stump. The City may add parks during the term at the same unit prices.",
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "A 2022 park tree-care bid is on the city's portal; the tabulation lists three bidders.",
+     "previous_winner": "",
+     "previous_award": null,
+     "contract_period": "",
+     "exact": [],
+     "similar": [],
+     "local_matches": [
+      {
+       "title": "Park Tree Care Services (sample, 2022)",
+       "reference": "DEMO-FW-22-0419",
+       "closed": "2022-05-12",
+       "status": "Awarded",
+       "url": "https://fortworthtexas.bonfirehub.com/portal/?tab=pastOpportunities",
+       "source": "City of Fort Worth"
+      }
+     ],
+     "awards_url": "https://fortworthtexas.bonfirehub.com/portal/?tab=pastOpportunities",
+     "number_of_similar_awards": 0,
+     "median_similar_award": null,
+     "distinct_winners": [],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "houston_city",
+   "source_id": "DEMO-HOU-LAND-0718",
+   "solicitation_number": "DEMO-HOU-LAND-0718",
+   "title": "Landscape Maintenance, William P. Hobby Airport (sample)",
+   "url": "https://www.beaconbid.com/solicitations/city-of-houston/open",
+   "agency": "City of Houston (sample)",
+   "office": "Houston Airport System",
+   "city": "Houston",
+   "market": "houston",
+   "jurisdiction": "city",
+   "naics": "561730",
+   "procurement_type": "Request for Proposal",
+   "estimated_value": 320000,
+   "value_basis": "Estimated annual value",
+   "deadline_in_days": 19,
+   "posted_days_ago": 8,
+   "description": "Grounds and landscape maintenance for airport roadways, terminals, and parking areas. An M/WBE goal of 18% applies. Hire Houston First applies. Proposers must have a minimum of five (5) years of experience providing commercial landscape maintenance. Background checks are required for airport badging. General liability of $1,000,000.",
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "No award history found online for this contract; ask the buyer who the incumbent is.",
+     "previous_winner": "",
+     "previous_award": null,
+     "contract_period": "",
+     "exact": [],
+     "similar": [],
+     "local_matches": [],
+     "awards_url": "https://purchasing.houstontx.gov",
+     "number_of_similar_awards": 0,
+     "median_similar_award": null,
+     "distinct_winners": [],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "san_antonio_city",
+   "source_id": "DEMO-SA-GRAF-0144",
+   "solicitation_number": "DEMO-SA-GRAF-0144",
+   "title": "Graffiti Abatement Services (sample)",
+   "url": "https://www.sa.gov/Directory/Departments/Finance/About/Divisions/Procurement/Bidding-Contracting",
+   "agency": "City of San Antonio (sample)",
+   "office": "Code Enforcement",
+   "city": "San Antonio",
+   "market": "san_antonio",
+   "jurisdiction": "city",
+   "naics": "561790",
+   "procurement_type": "Request for Competitive Sealed Proposals",
+   "estimated_value": 180000,
+   "value_basis": "Estimated annual value",
+   "deadline_in_days": 11,
+   "posted_days_ago": 9,
+   "description": "Graffiti abatement on public property citywide. Contractor must provide 24/7 coverage with emergency response within four hours for offensive graffiti. SBEDA small-business subcontracting goals apply. General liability of $1,000,000.",
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "No award history found online. The city posts intent-to-award notices on its bidding page.",
+     "previous_winner": "",
+     "previous_award": null,
+     "contract_period": "",
+     "exact": [],
+     "similar": [],
+     "local_matches": [],
+     "awards_url": "https://www.sa.gov/Directory/Departments/Finance/About/Divisions/Procurement/Bidding-Contracting",
+     "number_of_similar_awards": 0,
+     "median_similar_award": null,
+     "distinct_winners": [],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "texas_esbd",
+   "source_id": "DEMO-TX-WIN-0550",
+   "solicitation_number": "DEMO-TX-WIN-0550",
+   "title": "Window Cleaning Services, State Office Buildings (sample)",
+   "url": "https://www.txsmartbuy.gov/esbd",
+   "agency": "Texas Facilities Commission (sample)",
+   "office": "Procurement",
+   "city": "",
+   "market": "statewide",
+   "jurisdiction": "state",
+   "naics": "561720",
+   "procurement_type": "Invitation for Bid",
+   "estimated_value": 600000,
+   "value_basis": "Estimated total contract value",
+   "deadline_in_days": 12,
+   "posted_days_ago": 10,
+   "place_of_performance": "Various locations, Texas",
+   "description": "Interior and exterior window cleaning for 14 buildings statewide, including high-rise work. A HUB Subcontracting Plan is required. A performance bond of 100% of the contract amount is required within ten days of award. General liability of $2,000,000.",
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "No award history found online; the ESBD shows award notices for past solicitations.",
+     "previous_winner": "",
+     "previous_award": null,
+     "contract_period": "",
+     "exact": [],
+     "similar": [],
+     "local_matches": [],
+     "awards_url": "https://www.txsmartbuy.gov/esbd",
+     "number_of_similar_awards": 0,
+     "median_similar_award": null,
+     "distinct_winners": [],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "austin_city",
+   "source_id": "DEMO-AUS-CUS-0233",
+   "solicitation_number": "DEMO-AUS-CUS-0233",
+   "title": "Custodial Services, Parks Recreation Centers (sample)",
+   "url": "https://financeonline.austintexas.gov/",
+   "agency": "City of Austin (sample)",
+   "office": "Parks and Recreation",
+   "city": "Austin",
+   "market": "austin",
+   "jurisdiction": "city",
+   "naics": "561720",
+   "procurement_type": "Invitation for Bid",
+   "estimated_value": 150000,
+   "value_basis": "Estimated annual value",
+   "deadline_in_days": 20,
+   "posted_days_ago": 7,
+   "description": "Custodial services at six recreation centers. The contractor shall self-perform all work with its own employees; subcontracting is not permitted. General liability of $1,000,000.",
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "No award history found online.",
+     "previous_winner": "",
+     "previous_award": null,
+     "contract_period": "",
+     "exact": [],
+     "similar": [],
+     "local_matches": [],
+     "awards_url": "https://financeonline.austintexas.gov/",
+     "number_of_similar_awards": 0,
+     "median_similar_award": null,
+     "distinct_winners": [],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "sam",
+   "source_id": "DEMO-SAM-FA3016-SS",
+   "solicitation_number": "DEMO-SAM-FA3016-SS",
+   "title": "Sources Sought, Grounds Maintenance, JBSA-Randolph (sample)",
+   "url": "https://sam.gov/search/?index=opp",
+   "agency": "Dept Of The Air Force (sample)",
+   "office": "FA3016 502 CONS CL",
+   "city": "Universal City",
+   "market": "san_antonio",
+   "jurisdiction": "federal",
+   "naics": "561730",
+   "notice_type": "sources_sought",
+   "procurement_type": "Sources Sought",
+   "deadline_in_days": 14,
+   "posted_days_ago": 3,
+   "place_of_performance": "JBSA-Randolph, TX",
+   "description": "Market research only. The Air Force is seeking capable small businesses for grounds maintenance at Joint Base San Antonio-Randolph. Responses will help decide whether the requirement is set aside for small business.",
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "Similar JBSA grounds contracts have gone to several small businesses in the last five years.",
+     "previous_winner": "",
+     "previous_award": null,
+     "contract_period": "",
+     "exact": [],
+     "similar": [
+      {
+       "award_id": "DEMO-FA3016-21-C-0033",
+       "recipient": "Alamo Grounds LLC (sample)",
+       "amount": 1250000,
+       "start": "2021-06-01",
+       "end": "2026-05-31",
+       "agency": "Department of Defense",
+       "sub_agency": "",
+       "description": "",
+       "url": "https://www.usaspending.gov/search",
+       "source": "Sample"
+      }
+     ],
+     "local_matches": [],
+     "awards_url": "",
+     "number_of_similar_awards": 4,
+     "median_similar_award": 900000,
+     "distinct_winners": [
+      "Alamo Grounds LLC (sample)"
+     ],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "sam",
+   "source_id": "DEMO-SAM-SDV-BULLIS",
+   "solicitation_number": "DEMO-SAM-SDV-BULLIS",
+   "title": "Grounds Maintenance, Camp Bullis (sample)",
+   "url": "https://sam.gov/search/?index=opp",
+   "agency": "Dept Of The Army (sample)",
+   "office": "MICC Fort Sam Houston",
+   "city": "San Antonio",
+   "market": "san_antonio",
+   "jurisdiction": "federal",
+   "naics": "561730",
+   "set_aside": "Service-Disabled Veteran-Owned Small Business Set-Aside",
+   "set_aside_code": "SDVOSBC",
+   "notice_type": "solicitation",
+   "deadline_in_days": 21,
+   "posted_days_ago": 5,
+   "description": "Mowing, trimming, and grounds upkeep at Camp Bullis training areas.",
+   "raw": {
+    "demo": true
+   }
+  },
+  {
+   "source": "bexar_county",
+   "source_id": "DEMO-BEX-DEB-0788",
+   "solicitation_number": "Event #0788 (sample)",
+   "title": "Debris Removal and Hauling, County Roads (sample)",
+   "url": "https://www.bexar.org/purchasing",
+   "agency": "Bexar County (sample)",
+   "office": "Public Works",
+   "city": "San Antonio",
+   "market": "san_antonio",
+   "jurisdiction": "county",
+   "naics": "562119",
+   "estimated_value": 210000,
+   "value_basis": "Estimated annual value",
+   "deadline_in_days": 9,
+   "posted_days_ago": 16,
+   "description": "Removal and hauling of roadside debris and illegal dumping from county roads. A mandatory pre-bid meeting was held on August 28, 2026; only firms that attended may bid. Contractor shall furnish all equipment.",
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "No award history found online.",
+     "previous_winner": "",
+     "previous_award": null,
+     "contract_period": "",
+     "exact": [],
+     "similar": [],
+     "local_matches": [],
+     "awards_url": "https://www.bexar.org/purchasing",
+     "number_of_similar_awards": 0,
+     "median_similar_award": null,
+     "distinct_winners": [],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "austin_city",
+   "source_id": "DEMO-AUS-SUP-0101",
+   "solicitation_number": "DEMO-AUS-SUP-0101",
+   "title": "Janitorial Supplies, Paper Products and Can Liners (sample)",
+   "url": "https://financeonline.austintexas.gov/",
+   "agency": "City of Austin (sample)",
+   "city": "Austin",
+   "market": "austin",
+   "jurisdiction": "city",
+   "deadline_in_days": 18,
+   "posted_days_ago": 4,
+   "description": "Purchase of paper towels, toilet tissue, and can liners for city facilities, delivered monthly.",
+   "raw": {
+    "demo": true
+   }
+  },
+  {
+   "source": "houston_city",
+   "source_id": "DEMO-HOU-SEC-0444",
+   "solicitation_number": "DEMO-HOU-SEC-0444",
+   "title": "Unarmed Security Guard Services, 85 Officers at Multiple Facilities (sample)",
+   "url": "https://www.beaconbid.com/solicitations/city-of-houston/open",
+   "agency": "City of Houston (sample)",
+   "city": "Houston",
+   "market": "houston",
+   "jurisdiction": "city",
+   "deadline_in_days": 24,
+   "posted_days_ago": 6,
+   "description": "Unarmed security guard services at city facilities requiring approximately 85 officers around the clock.",
+   "raw": {
+    "demo": true
+   }
+  },
+  {
+   "source": "dallas_city",
+   "source_id": "DEMO-DAL-FS-060",
+   "solicitation_number": "DEMO-DAL-FS-060",
+   "title": "New Construction of Fire Station No. 60 (sample)",
+   "url": "https://dallascityhall.bonfirehub.com/portal/?tab=openOpportunities",
+   "agency": "City of Dallas (sample)",
+   "city": "Dallas",
+   "market": "dfw",
+   "jurisdiction": "city",
+   "deadline_in_days": 30,
+   "posted_days_ago": 12,
+   "description": "General contractor for new construction of a two-bay fire station, including site cleanup at completion.",
+   "raw": {
+    "demo": true
+   }
+  },
+  {
+   "source": "harris_county",
+   "source_id": "DEMO-HC-ELV-0620",
+   "solicitation_number": "DEMO-HC-ELV-0620",
+   "title": "Elevator Maintenance and Repair Services (sample)",
+   "url": "https://harriscountytx.bonfirehub.com/portal/?tab=openOpportunities",
+   "agency": "Harris County (sample)",
+   "city": "Houston",
+   "market": "houston",
+   "jurisdiction": "county",
+   "deadline_in_days": 26,
+   "posted_days_ago": 2,
+   "description": "Preventive maintenance and repair of 40 elevators in county buildings.",
+   "raw": {
+    "demo": true
+   }
+  },
+  {
+   "source": "sam",
+   "source_id": "DEMO-SAM-ELV-HOU",
+   "solicitation_number": "DEMO-SAM-ELV-HOU",
+   "title": "Elevator Maintenance Services, Federal Building, Houston (sample)",
+   "url": "https://sam.gov/search/?index=opp",
+   "agency": "General Services Administration (sample)",
+   "city": "Houston",
+   "market": "houston",
+   "jurisdiction": "federal",
+   "naics": "238290",
+   "notice_type": "solicitation",
+   "deadline_in_days": 23,
+   "posted_days_ago": 4,
+   "description": "Full-service elevator maintenance for a federal building.",
+   "raw": {
+    "demo": true
+   }
+  },
+  {
+   "source": "sam",
+   "source_id": "DEMO-SAM-CARPET-EXP",
+   "solicitation_number": "DEMO-SAM-CARPET-EXP",
+   "title": "Carpet Cleaning Services, Federal Center, Austin (sample)",
+   "url": "https://sam.gov/search/?index=opp",
+   "agency": "Internal Revenue Service (sample)",
+   "city": "Austin",
+   "market": "austin",
+   "jurisdiction": "federal",
+   "naics": "561740",
+   "notice_type": "solicitation",
+   "deadline_in_days": -2,
+   "posted_days_ago": 20,
+   "description": "Carpet cleaning for office areas. This sample shows how expired opportunities are handled.",
+   "raw": {
+    "demo": true
+   }
+  },
+  {
+   "source": "sam",
+   "source_id": "DEMO-SWF-MATOC-JAN",
+   "solicitation_number": "DEMO-SWF-MATOC-JAN",
+   "title": "Janitorial and Custodial Services MATOC, USACE Fort Worth District (sample)",
+   "url": "https://sam.gov/search/?index=opp",
+   "agency": "Dept Of The Army (sample)",
+   "office": "USACE Fort Worth District",
+   "city": "Fort Worth",
+   "market": "dfw",
+   "jurisdiction": "federal",
+   "naics": "561720",
+   "set_aside": "Total Small Business Set-Aside (FAR 19.5)",
+   "set_aside_code": "SBA",
+   "notice_type": "solicitation",
+   "procurement_type": "Solicitation",
+   "deadline_in_days": 27,
+   "posted_days_ago": 5,
+   "place_of_performance": "Fort Worth, TX",
+   "description": "The U.S. Army Corps of Engineers, Fort Worth District, intends to award up to five (5) multiple-award indefinite-delivery, indefinite-quantity (IDIQ) contracts for janitorial and custodial services at Corps facilities in North Texas, with a five-year ordering period. Each awardee is guaranteed a minimum of $2,500. The shared program ceiling is $24,000,000 across all awards. Task orders will be competed among awardees under FAR 16.505 fair opportunity procedures. A seed task order for the District headquarters building will be awarded with the IDIQ. FAR 52.219-14 Limitations on Subcontracting applies. The attached wage determination and the Service Contract Labor Standards clause (52.222-41) apply. Offerors shall submit past performance for up to three recent, relevant contracts.",
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "The last Fort Worth District custodial vehicle went to three small businesses; the largest holder received about $1.1M in orders.",
+     "previous_winner": "",
+     "previous_award": null,
+     "contract_period": "",
+     "exact": [],
+     "similar": [
+      {
+       "award_id": "DEMO-W9126G-19-D-0012",
+       "recipient": "Trinity Clean Co. (sample)",
+       "amount": 1100000,
+       "start": "2019-09-30",
+       "end": "2024-09-29",
+       "agency": "Department of Defense",
+       "sub_agency": "",
+       "url": "https://www.usaspending.gov/search",
+       "source": "Sample"
+      }
+     ],
+     "local_matches": [],
+     "awards_url": "",
+     "number_of_similar_awards": 3,
+     "median_similar_award": 640000,
+     "distinct_winners": [
+      "Trinity Clean Co. (sample)"
+     ],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  },
+  {
+   "source": "sam",
+   "source_id": "DEMO-R7-BPA-TO-044",
+   "solicitation_number": "DEMO-R7-BPA-TO-044",
+   "title": "Task Order Request: Custodial Services, Federal Building, Dallas (sample)",
+   "url": "https://sam.gov/search/?index=opp",
+   "agency": "General Services Administration (sample)",
+   "city": "Dallas",
+   "market": "dfw",
+   "jurisdiction": "federal",
+   "naics": "561720",
+   "notice_type": "solicitation",
+   "deadline_in_days": 16,
+   "posted_days_ago": 2,
+   "description": "This task order request for proposal is issued under the Region 7 Custodial Services BPA. Only current BPA holders may respond; proposals from firms that do not hold the BPA will not be considered.",
+   "raw": {
+    "demo": true
+   }
+  },
+  {
+   "source": "usaspending_idv",
+   "source_id": "IDV-DEMO-36C257-21-A-0009",
+   "solicitation_number": "DEMO-36C257-21-A-0009",
+   "title": "Recompete expected: Custodial services BPA, Dallas VA Medical Center (sample)",
+   "url": "https://www.usaspending.gov/search",
+   "agency": "Department of Veterans Affairs (sample)",
+   "office": "Veterans Health Administration",
+   "city": "Dallas",
+   "market": "dfw",
+   "jurisdiction": "federal",
+   "naics": "561720",
+   "notice_type": "forecast",
+   "procurement_type": "Existing IDIQ/BPA (recompete forecast)",
+   "place_of_performance": "Dallas, TX",
+   "posted_days_ago": 0,
+   "description": "Existing contract vehicle: custodial services BPA at the Dallas VA Medical Center. Lone Star Facility Services LLC (sample) holds it; it stops taking orders in about nine months. Agencies usually compete a replacement before an ordering period ends — watch SAM.gov for a sources sought or pre-solicitation notice and introduce yourself to the contracting office and the incumbent now.",
+   "raw": {
+    "demo": true,
+    "award_history_seed": {
+     "summary": "Last time: Lone Star Facility Services LLC (sample) has received about $1.8M in orders under this BPA since 2021.",
+     "previous_winner": "Lone Star Facility Services LLC (sample)",
+     "previous_award": 1840000,
+     "contract_period": "2021-06-01 to about nine months from now",
+     "exact": [],
+     "similar": [],
+     "local_matches": [],
+     "awards_url": "",
+     "number_of_similar_awards": 0,
+     "median_similar_award": null,
+     "distinct_winners": [],
+     "sources": [
+      "Sample data — not a real award record"
+     ]
+    }
+   }
+  }
+ ],
+ "vehicle_leads": [
+  {
+   "holder": "Lone Star Facility Services LLC (sample)",
+   "award_id": "DEMO-36C257-21-A-0009",
+   "vehicle": "BPA",
+   "description": "Custodial services, Dallas VA Medical Center (sample)",
+   "agency": "Department of Veterans Affairs",
+   "amount": 1840000,
+   "last_order_in_days": 270,
+   "url": "https://www.usaspending.gov/search",
+   "source": "Sample"
+  },
+  {
+   "holder": "Alamo Grounds LLC (sample)",
+   "award_id": "DEMO-FA3016-22-D-0031",
+   "vehicle": "IDC",
+   "description": "Grounds maintenance, Joint Base San Antonio (sample)",
+   "agency": "Department of Defense",
+   "amount": 3100000,
+   "last_order_in_days": 900,
+   "url": "https://www.usaspending.gov/search",
+   "source": "Sample"
+  },
+  {
+   "holder": "Gulf Coast Building Services Inc. (sample)",
+   "contract_number": "DEMO-47PH-26-D-0004",
+   "vehicle": "Multiple-award IDIQ (MATOC)",
+   "title": "Janitorial MATOC, federal buildings, Houston (sample)",
+   "agency": "General Services Administration",
+   "amount": 450000,
+   "award_days_ago": 6,
+   "url": "https://sam.gov/search/?index=opp",
+   "source": "Sample SAM.gov award notice"
+  }
+ ]
+}

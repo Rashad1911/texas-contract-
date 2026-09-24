@@ -1,0 +1,63 @@
+{
+ "meta": {
+  "title": "Texas Contract Scout",
+  "company": "D&P Cleaning",
+  "legal_name": "Deyampert & Patterson Enterprises LLC",
+  "generated_at": "2026-09-23T08:53:05.186474-05:00",
+  "generated_label": "Sep 23, 2026",
+  "site_url": "",
+  "repo": "",
+  "is_demo": false,
+  "run_every_days": 3.0,
+  "next_run": "",
+  "markets": {
+   "dfw": "Dallas / Fort Worth",
+   "houston": "Houston",
+   "austin": "Austin",
+   "san_antonio": "San Antonio",
+   "statewide": "Texas (statewide)",
+   "unknown": "Location not listed"
+  },
+  "services": {
+   "janitorial": "Janitorial / custodial",
+   "post_construction_cleaning": "Post-construction / make-ready cleaning",
+   "pressure_washing": "Pressure washing",
+   "window_cleaning": "Window cleaning",
+   "landscaping": "Landscaping / grounds maintenance",
+   "tree_services": "Tree trimming / removal / stump grinding",
+   "debris_removal": "Debris / storm cleanup / junk removal",
+   "waste_hauling": "Waste hauling / liquid waste / grease traps",
+   "parking_lot": "Parking lot sweeping / striping / sealcoating",
+   "graffiti_street_cleaning": "Graffiti removal / street & sidewalk cleaning",
+   "pest_control": "Pest control",
+   "facility_maintenance": "Facility maintenance / minor repairs / painting / flooring",
+   "hvac_plumbing_electrical": "HVAC / plumbing / electrical maintenance",
+   "moving": "Moving / relocation",
+   "courier_delivery": "Courier / delivery",
+   "document_destruction": "Records / document destruction",
+   "transportation": "Non-emergency / accessible transportation",
+   "vehicle_services": "Vehicle washing / detailing / fleet services",
+   "staffing": "Temporary labor / staffing",
+   "event_support": "Event support / rentals",
+   "security": "Security services",
+   "equipment_rental": "Equipment rental",
+   "warehouse": "Warehouse / logistics support",
+   "laundry": "Laundry / linen",
+   "snow_ice": "Snow / ice services"
+  },
+  "source_count": 15,
+  "thresholds": {
+   "top": 72,
+   "review": 55,
+   "watch": 42
+  }
+ },
+ "stats": {},
+ "history": [],
+ "sources": [],
+ "discovery": {},
+ "opportunities": [],
+ "vehicles": {
+  "leads": []
+ }
+}

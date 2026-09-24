@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Texas Contract Scout</title>
+<meta name="description" content="Texas government contract opportunities, researched and ranked.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3F5F7; --card:#FFFFFF; --ink:#14213D; --muted:#5B6575; --line:#D5DAE1; --soft:#E9EDF2;
+  --manila:#E8D9A8; --manila-ink:#5E4E1C; --stamp:#B42318; --go:#2F6B45; --amber:#B7791F; --fire:#C2410C;
+  --link:#1D4ED8; --gray:#8A94A6; --shadow:0 1px 2px rgba(20,33,61,.06),0 4px 14px rgba(20,33,61,.06);
+  --red-bg:#FDECEA; --orange-bg:#FDF3E1; --green-bg:#E7F2EA; --none-bg:#EEF1F5;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0D1320; --card:#151D2E; --ink:#E6EAF2; --muted:#9AA4B6; --line:#2A3550; --soft:#1C2639;
+    --manila:#4A4128; --manila-ink:#F0E2B6; --stamp:#F0776B; --go:#6FC08C; --amber:#E2B35A; --fire:#F08A4B;
+    --link:#8AB4FF; --gray:#7C879B; --shadow:0 1px 2px rgba(0,0,0,.3);
+    --red-bg:#3A1C1C; --orange-bg:#3A2D14; --green-bg:#16301F; --none-bg:#1C2639; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0D1320; --card:#151D2E; --ink:#E6EAF2; --muted:#9AA4B6; --line:#2A3550; --soft:#1C2639;
+  --manila:#4A4128; --manila-ink:#F0E2B6; --stamp:#F0776B; --go:#6FC08C; --amber:#E2B35A; --fire:#F08A4B;
+  --link:#8AB4FF; --gray:#7C879B; --shadow:0 1px 2px rgba(0,0,0,.3);
+  --red-bg:#3A1C1C; --orange-bg:#3A2D14; --green-bg:#16301F; --none-bg:#1C2639; color-scheme:dark;
+}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-variant-numeric:tabular-nums}
+a{color:var(--link)}
+button,input,select{font:inherit;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+[hidden]{display:none !important}
+:focus-visible{outline:3px solid var(--link);outline-offset:2px;border-radius:6px}
+
+/* header */
+header.top{background:var(--ink);color:var(--paper);padding:18px 0 22px}
+:root[data-theme="dark"] header.top{background:#0A0F1A;color:var(--ink)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) header.top{background:#0A0F1A;color:var(--ink)}}
+.brand{display:flex;align-items:center;gap:12px}
+.seal{width:40px;height:40px;flex:none}
+.brand h1{font-size:1.25rem;line-height:1.2;margin:0;font-weight:800;letter-spacing:-.01em}
+.brand p{margin:2px 0 0;font-size:.875rem;opacity:.8}
+.head-row{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.head-actions{display:flex;gap:8px;align-items:center}
+.ghost{background:transparent;border:1px solid rgba(255,255,255,.35);color:inherit;border-radius:8px;padding:7px 12px;font-size:.875rem;font-weight:600;cursor:pointer}
+.ghost:hover{background:rgba(255,255,255,.08)}
+.search{margin-top:16px;position:relative}
+.search input{width:100%;border:0;border-radius:10px;padding:13px 14px 13px 42px;font-size:1rem;background:var(--card);color:var(--ink);box-shadow:0 2px 0 rgba(0,0,0,.15)}
+.search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--muted)}
+.updated{font-size:.8125rem;opacity:.75;margin-top:8px}
+
+.banner{background:var(--red-bg);color:var(--stamp);border:1px solid var(--stamp);border-radius:10px;padding:10px 14px;margin:16px 0 0;font-size:.9rem;font-weight:600}
+
+/* summary */
+.summary{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:18px 0 8px;box-shadow:var(--shadow)}
+.donut{width:132px;height:132px}
+.counts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.count{border:0;background:var(--soft);border-radius:10px;padding:10px 12px;text-align:left;cursor:pointer}
+.count:hover{outline:2px solid var(--line)}
+.count b{display:block;font-size:1.5rem;line-height:1.1;font-weight:800}
+.count span{font-size:.8125rem;color:var(--muted)}
+.count i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.funnel{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.875rem;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+.funnel strong{color:var(--ink)}
+.how{font-size:.9rem;color:var(--muted);margin:10px 2px 0;max-width:72ch}
+@media (max-width:720px){.summary{grid-template-columns:96px minmax(0,1fr);gap:14px;padding:14px}.donut{width:96px;height:96px}
+  .counts{grid-template-columns:1fr;gap:4px}.count{display:flex;flex-direction:row-reverse;justify-content:space-between;align-items:center;padding:6px 10px}
+  .count b{font-size:1.1rem}.funnel{font-size:.8125rem;padding-top:10px}.how{display:none}}
+
+/* sections */
+h2.sec{font-size:1.15rem;margin:30px 0 4px;font-weight:800;letter-spacing:-.01em}
+.sec-sub{color:var(--muted);font-size:.9rem;margin:0 0 6px}
+
+/* shortlist: manila folders */
+.shortlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:4px 16px;align-items:start}
+.folder{margin-top:14px;cursor:pointer;text-align:left;border:0;padding:0;background:none;width:100%;display:block}
+.folder .tab{display:inline-flex;align-items:center;gap:7px;background:var(--manila);color:var(--manila-ink);font-weight:700;font-size:.8125rem;padding:6px 14px 5px;border-radius:9px 9px 0 0}
+.folder .tab i{width:8px;height:8px;border-radius:50%}
+.folder .sheet{position:relative;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--manila);border-radius:0 12px 12px 12px;padding:14px 14px 12px;box-shadow:var(--shadow);overflow:hidden}
+.folder:hover .sheet{border-color:var(--gray);border-top-color:var(--manila)}
+.sheet-head{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start}
+.sheet h3{font-size:1.02rem;line-height:1.3;margin:0 0 4px;font-weight:700}
+.agency{font-size:.875rem;color:var(--muted);margin:0}
+.days{min-width:76px;text-align:center;border-radius:10px;padding:8px 6px 6px;line-height:1}
+.days b{display:block;font-size:1.75rem;font-weight:800}
+.days span{display:block;font-size:.7rem;margin-top:4px;font-weight:600}
+.days.red{background:var(--red-bg);color:var(--stamp)} .days.orange{background:var(--orange-bg);color:var(--amber)}
+.days.green{background:var(--green-bg);color:var(--go)} .days.none,.days.expired{background:var(--none-bg);color:var(--muted)}
+.facts4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:12px 0 10px;padding:10px 0;border-top:1px dashed var(--line);border-bottom:1px dashed var(--line)}
+.facts4 div{min-width:0}
+.facts4 small{display:block;font-size:.72rem;color:var(--muted)}
+.facts4 strong{display:block;font-size:.9rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.why{font-size:.9rem;margin:0;color:var(--ink);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.risk{font-size:.85rem;margin:8px 0 0;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.risk b{color:var(--stamp);font-weight:700}
+.stamp{position:absolute;right:12px;bottom:12px;transform:rotate(-9deg);border:2.5px solid currentColor;border-radius:6px;padding:2px 9px;font-weight:800;font-size:.8rem;letter-spacing:.12em;opacity:.85;background:var(--card);mix-blend-mode:multiply}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .stamp{mix-blend-mode:normal}}
+:root[data-theme="dark"] .stamp{mix-blend-mode:normal}
+.stamp.PURSUE{color:var(--go)} .stamp.WATCH{color:var(--amber)} .stamp.PASS{color:var(--stamp)}
+.empty{background:var(--card);border:1px dashed var(--line);border-radius:12px;padding:20px;color:var(--muted);margin-top:14px}
+@media (max-width:420px){.shortlist{grid-template-columns:1fr}.facts4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* list */
+.toolbar{position:sticky;top:0;z-index:5;background:var(--paper);padding:10px 0 10px;display:flex;flex-direction:column;gap:10px}
+.seg{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.seg::-webkit-scrollbar{display:none}
+.seg button{flex:none;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 13px;font-size:.875rem;font-weight:600;cursor:pointer;white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+:root[data-theme="dark"] .seg button[aria-pressed="true"]{background:var(--ink);color:#0D1320}
+.seg button em{font-style:normal;opacity:.7;margin-left:4px}
+.selects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.selects select{width:100%;border:1px solid var(--line);background:var(--card);border-radius:8px;padding:8px 10px;font-size:.875rem}
+.rows{display:flex;flex-direction:column;gap:8px}
+.row{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;text-align:left;cursor:pointer;width:100%}
+.row:hover{border-color:var(--gray)}
+.dot{width:10px;height:10px;border-radius:50%}
+.row h4{margin:0;font-size:.95rem;line-height:1.3;font-weight:650}
+.row .meta{font-size:.8125rem;color:var(--muted);margin-top:2px;display:flex;flex-wrap:wrap;gap:2px 12px}
+.row .reason{font-size:.8125rem;color:var(--muted);margin-top:4px}
+.row .right{text-align:right;font-size:.8125rem;color:var(--muted);white-space:nowrap}
+.row .right b{display:block;font-size:.95rem;color:var(--ink)}
+.chip{display:inline-block;font-size:.72rem;font-weight:700;border-radius:999px;padding:2px 8px;background:var(--soft);color:var(--muted)}
+.chip.PURSUE{background:var(--green-bg);color:var(--go)} .chip.WATCH{background:var(--orange-bg);color:var(--amber)} .chip.PASS{background:var(--red-bg);color:var(--stamp)}
+.more{margin:12px auto 0;display:block}
+.btn{border:1px solid var(--line);background:var(--card);border-radius:9px;padding:9px 14px;font-weight:600;font-size:.9rem;cursor:pointer;text-decoration:none;color:var(--ink);display:inline-flex;align-items:center;gap:6px}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+:root[data-theme="dark"] .btn.primary{color:#0D1320}
+.btn.go{color:var(--go)} .btn.watch{color:var(--amber)} .btn.pass{color:var(--stamp)}
+@media (max-width:560px){.selects{grid-template-columns:1fr 1fr}.selects select:last-child{grid-column:1 / -1}.row{grid-template-columns:auto 1fr}.row .right{grid-column:2;text-align:left}.row .right b{display:inline;margin-right:8px}}
+
+/* detail sheet */
+.overlay{position:fixed;inset:0;background:rgba(10,15,26,.45);z-index:20;display:none}
+.overlay.open{display:block}
+.detail{position:fixed;top:0;right:0;bottom:0;width:min(760px,100%);background:var(--paper);z-index:21;transform:translateX(100%);visibility:hidden;transition:transform .2s ease,visibility 0s linear .2s;display:flex;flex-direction:column;box-shadow:none}
+.detail.open{transform:none;visibility:visible;transition:transform .2s ease,visibility 0s;box-shadow:-10px 0 40px rgba(0,0,0,.2)}
+.detail-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 16px;padding-top:calc(10px + env(safe-area-inset-top,0px));border-bottom:1px solid var(--line);background:var(--card)}
+.detail-body{overflow-y:auto;padding:18px 18px calc(40px + env(safe-area-inset-bottom,0px));-webkit-overflow-scrolling:touch}
+.close{border:0;background:var(--soft);border-radius:999px;width:36px;height:36px;font-size:1.3rem;line-height:1;cursor:pointer}
+.detail h2{font-size:1.3rem;line-height:1.25;margin:4px 0 6px;font-weight:800;letter-spacing:-.01em}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:12px 0}
+.grid div{background:var(--card);padding:9px 12px;min-width:0}
+.grid small{display:block;font-size:.75rem;color:var(--muted)}
+.grid strong{font-weight:600;font-size:.92rem;overflow-wrap:anywhere}
+@media (max-width:420px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:12px 0}
+.panel h3{font-size:1rem;margin:0 0 8px;font-weight:800}
+.panel p{margin:6px 0}
+.panel ul,.panel ol{margin:6px 0;padding-left:20px}
+.panel li{margin:4px 0}
+.callout{border-left:4px solid var(--amber);background:var(--orange-bg)}
+.callout.red{border-left-color:var(--stamp);background:var(--red-bg)}
+.check{list-style:none;padding:0 !important}
+.check li{display:grid;grid-template-columns:22px 1fr;gap:6px}
+.ev{font-size:.8rem;color:var(--muted);margin-top:2px}
+details{border-top:1px solid var(--line);padding:8px 0}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:650;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--muted);font-weight:700}
+details[open] > summary::after{content:"–"}
+.chain{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:10px 0}
+.chain span{background:var(--soft);border-radius:8px;padding:6px 10px;font-size:.85rem;font-weight:600}
+.chain b{color:var(--muted)}
+.bars{display:flex;flex-direction:column;gap:6px}
+.bar{display:grid;grid-template-columns:150px 1fr 34px;gap:8px;align-items:center;font-size:.82rem}
+.bar .track{height:8px;background:var(--soft);border-radius:99px;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;background:var(--ink)}
+pre.draft{white-space:pre-wrap;word-break:break-word;background:var(--soft);border-radius:10px;padding:12px;font-size:.8rem;line-height:1.45;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;max-height:420px;overflow:auto;margin:8px 0}
+table.t{width:100%;border-collapse:collapse;font-size:.85rem}
+.t-wrap{overflow-x:auto}
+table.t th,table.t td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.t th{font-weight:700;color:var(--muted);font-size:.78rem}
+.sev{font-size:.72rem;font-weight:800;border-radius:6px;padding:1px 6px;margin-right:6px}
+.sev.kill{background:var(--stamp);color:#fff}.sev.major{background:var(--orange-bg);color:var(--amber)}.sev.minor{background:var(--soft);color:var(--muted)}
+.big-stamp{display:inline-block;transform:rotate(-4deg);border:3px solid currentColor;border-radius:8px;padding:3px 12px;font-weight:800;letter-spacing:.14em;font-size:.95rem;margin:6px 0}
+.big-stamp.PURSUE{color:var(--go)}.big-stamp.WATCH{color:var(--amber)}.big-stamp.PASS{color:var(--stamp)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:10px;font-size:.9rem;z-index:40;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+.owner-note{font-size:.8rem;color:var(--muted);margin-top:-4px}
+
+/* teaming leads */
+.leads{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.leads li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-width:0}
+.leads .who{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-weight:700}
+.leads .who b{font-weight:800;white-space:nowrap}
+.leads .what{margin:4px 0 0;font-size:.9rem}
+.leads .meta{margin-top:4px;font-size:.8125rem;color:var(--muted);overflow-wrap:anywhere}
+
+/* footer */
+footer{margin:40px 0 0;padding:24px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.875rem}
+.status{font-size:.72rem;font-weight:700;border-radius:999px;padding:2px 8px;white-space:nowrap}
+.status.ok{background:var(--green-bg);color:var(--go)}.status.empty{background:var(--soft);color:var(--muted)}
+.status.error{background:var(--red-bg);color:var(--stamp)}.status.manual,.status.setup{background:var(--orange-bg);color:var(--amber)}
+.ideas li{margin:4px 0}
+.fine{font-size:.8rem;max-width:80ch}
+body.locked{overflow:hidden}
+@media (prefers-reduced-motion: reduce){*{transition:none !important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="head-row">
+      <div class="brand">
+        <svg class="seal" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18.5" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".55"/><circle cx="20" cy="20" r="14.5" fill="none" stroke="currentColor" stroke-width="1" opacity=".35"/><path d="M20 9.5l2.6 7.6h8l-6.5 4.8 2.5 7.7L20 24.8l-6.6 4.8 2.5-7.7-6.5-4.8h8z" fill="#E8D9A8"/></svg>
+        <div><h1 id="title">Texas Contract Scout</h1><p id="subtitle"></p></div>
+      </div>
+      <div class="head-actions">
+        <button class="ghost" id="shareBtn" type="button">Share</button>
+        <button class="ghost" id="themeBtn" type="button" aria-label="Switch light or dark">◐</button>
+      </div>
+    </div>
+    <label class="search"><span class="sr">Search opportunities</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Search a service, city, agency, or solicitation number" autocomplete="off">
+    </label>
+    <div class="updated" id="updated"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="banner"></div>
+  <section class="summary" aria-label="Report summary">
+    <svg class="donut" id="donut" viewBox="0 0 120 120" role="img" aria-label="Summary chart"></svg>
+    <div class="counts" id="counts"></div>
+    <div class="funnel" id="funnel"></div>
+  </section>
+  <p class="how" id="how"></p>
+
+  <h2 class="sec">This cycle's shortlist</h2>
+  <p class="sec-sub">Top opportunities and ones worth reviewing. Scores measure fit with the criteria, not odds of winning.</p>
+  <div class="shortlist" id="shortlist"></div>
+
+  <section class="list-block">
+  <h2 class="sec" id="all">Everything we found</h2>
+  <div class="toolbar">
+    <div class="seg" id="seg" role="group" aria-label="Filter by category"></div>
+    <div class="selects">
+      <select id="market" aria-label="Market"></select>
+      <select id="service" aria-label="Service"></select>
+      <select id="sort" aria-label="Sort">
+        <option value="score">Best match first</option>
+        <option value="deadline">Deadline soonest</option>
+        <option value="value">Largest value</option>
+        <option value="new">Newest found</option>
+      </select>
+    </div>
+  </div>
+  <div class="rows" id="rows"></div>
+  <button class="btn more" id="more" type="button" hidden>Show more</button>
+  </section>
+
+  <section id="vehicles" hidden>
+    <h2 class="sec">Contract vehicles and teaming leads</h2>
+    <p class="sec-sub">Companies holding IDIQs and BPAs for your kind of work in Texas. Task orders under these usually go only to the holders, so the way in is to offer to subcontract. Vehicles that stop taking orders soon also appear in the Watchlist as recompetes.</p>
+    <ul class="leads" id="leads"></ul>
+    <button class="btn more" id="moreLeads" type="button" hidden>Show all</button>
+  </section>
+
+  <footer>
+    <h2 class="sec" style="margin-top:0">Where we searched</h2>
+    <p class="sec-sub">Official sources only. A source marked "Check by hand" needs a login or a one-time setup.</p>
+    <div class="t-wrap"><table class="t" id="sources"></table></div>
+    <div id="discovery"></div>
+    <h2 class="sec">How to read this</h2>
+    <p class="fine">Every opportunity is filtered for fit, checked for requirements and subcontracting rules, compared with prior awards, and attacked by a red-team review before it's ranked. "Top" means the best match to the owner's criteria on the evidence found. It does not mean most likely to win. Always confirm requirements in the official solicitation, and have pricing and contract terms reviewed by a qualified professional. This page is an independent research tool and is not affiliated with any government agency.</p>
+    <p class="fine" id="ownerHelp"></p>
+  </footer>
+</main>
+
+<div class="overlay" id="overlay"></div>
+<aside class="detail" id="detail" role="dialog" aria-modal="true" aria-labelledby="dTitle" hidden>
+  <div class="detail-bar"><span id="dCat" class="chip"></span><button class="close" id="dClose" type="button" aria-label="Close">×</button></div>
+  <div class="detail-body" id="dBody"></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const DATA = {"meta":{"title":"Texas Contract Scout","company":"D&P Cleaning","legal_name":"Deyampert & Patterson Enterprises LLC","generated_at":"2026-09-23T08:53:05.186474-05:00","generated_label":"Sep 23, 2026","site_url":"","repo":"","is_demo":false,"run_every_days":3.0,"next_run":"","markets":{"dfw":"Dallas / Fort Worth","houston":"Houston","austin":"Austin","san_antonio":"San Antonio","statewide":"Texas (statewide)","unknown":"Location not listed"},"services":{"janitorial":"Janitorial / custodial","post_construction_cleaning":"Post-construction / make-ready cleaning","pressure_washing":"Pressure washing","window_cleaning":"Window cleaning","landscaping":"Landscaping / grounds maintenance","tree_services":"Tree trimming / removal / stump grinding","debris_removal":"Debris / storm cleanup / junk removal","waste_hauling":"Waste hauling / liquid waste / grease traps","parking_lot":"Parking lot sweeping / striping / sealcoating","graffiti_street_cleaning":"Graffiti removal / street & sidewalk cleaning","pest_control":"Pest control","facility_maintenance":"Facility maintenance / minor repairs / painting / flooring","hvac_plumbing_electrical":"HVAC / plumbing / electrical maintenance","moving":"Moving / relocation","courier_delivery":"Courier / delivery","document_destruction":"Records / document destruction","transportation":"Non-emergency / accessible transportation","vehicle_services":"Vehicle washing / detailing / fleet services","staffing":"Temporary labor / staffing","event_support":"Event support / rentals","security":"Security services","equipment_rental":"Equipment rental","warehouse":"Warehouse / logistics support","laundry":"Laundry / linen","snow_ice":"Snow / ice services"},"source_count":15,"thresholds":{"top":72,"review":55,"watch":42}},"stats":{},"history":[],"sources":[],"discovery":{},"opportunities":[],"vehicles":{"leads":[]}};
+(function(){
+"use strict";
+const D = DATA || {meta:{},stats:{},sources:[],opportunities:[],discovery:{}};
+const M = D.meta || {};
+const OPPS = D.opportunities || [];
+const byId = Object.fromEntries(OPPS.map(o => [o.id, o]));
+const CAT = {top:{label:"Top opportunity",short:"Top",color:"var(--fire)",emoji:"🔥"},
+             review:{label:"Worth reviewing",short:"Review",color:"var(--amber)",emoji:"🟡"},
+             watch:{label:"Watchlist",short:"Watch",color:"var(--gray)",emoji:"⚪"},
+             filtered:{label:"Filtered out",short:"Filtered",color:"var(--line)",emoji:"❌"},
+             expired:{label:"Closed",short:"Closed",color:"var(--line)",emoji:"⚫"}};
+const STAMP = {PURSUE:"PURSUING", WATCH:"WATCHING", PASS:"PASSED"};
+const $ = s => document.querySelector(s);
+const esc = v => String(v == null ? "" : v).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => { try { const x = new URL(u, location.href); return /^https?:$/.test(x.protocol) ? x.href : ""; } catch(e){ return ""; } };
+const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } },
+                set(k,v){ try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k,v); } catch(e){} } };
+
+/* owner mode: ?owner=1 once on your own device (stored locally); ?owner=0 turns it off */
+const params = new URLSearchParams(location.search);
+if (params.has("owner")) store.set("tcs_owner", params.get("owner") === "1" ? "1" : null);
+const OWNER = store.get("tcs_owner") === "1";
+
+/* theme toggle */
+const savedTheme = store.get("tcs_theme"); if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+$("#themeBtn").addEventListener("click", () => {
+  const dark = document.documentElement.dataset.theme ? document.documentElement.dataset.theme === "dark"
+             : matchMedia("(prefers-color-scheme: dark)").matches;
+  const next = dark ? "light" : "dark"; document.documentElement.dataset.theme = next; store.set("tcs_theme", next);
+});
+
+/* header */
+$("#title").textContent = M.title || "Texas Contract Scout";
+$("#subtitle").textContent = M.company ? `Government contract research for ${M.company}` : "Government contract research";
+$("#updated").textContent = `Updated ${M.generated_label || ""}` + (M.next_run ? `. Next search around ${M.next_run}.` : ".");
+if (M.is_demo) $("#banner").innerHTML = `<div class="banner">Sample data. These opportunities are made up to show how the dashboard works. Solicitation numbers start with DEMO.</div>`;
+$("#how").textContent = `Every ${M.run_every_days || 3} days an agent searches SAM.gov and ${Math.max((M.source_count||1)-1,0)} official Texas procurement portals across Dallas–Fort Worth, Houston, Austin, and San Antonio, removes poor fits, researches the rest, and ranks what's left.`;
+
+/* summary */
+const S = D.stats || {};
+const counts = {top:S.top||0, review:S.review||0, watch:S.watch||0, filtered:S.filtered||0};
+(function donut(){
+  const total = Object.values(counts).reduce((a,b)=>a+b,0);
+  const r = 46, C = 2*Math.PI*r; let off = 0, arcs = "";
+  if (!total) arcs = `<circle cx="60" cy="60" r="${r}" fill="none" stroke="var(--soft)" stroke-width="16"/>`;
+  for (const k of ["top","review","watch","filtered"]) {
+    const v = counts[k]; if (!v) continue;
+    const len = Math.max(v/total*C, total ? C*0.012 : 0);
+    arcs += `<circle cx="60" cy="60" r="${r}" fill="none" stroke="${CAT[k].color}" stroke-width="16" stroke-dasharray="${len} ${C-len}" stroke-dashoffset="${-off}" transform="rotate(-90 60 60)"/>`;
+    off += len;
+  }
+  $("#donut").innerHTML = arcs + `<text x="60" y="60" text-anchor="middle" font-size="24" font-weight="800" fill="var(--ink)">${S.found||0}</text><text x="60" y="78" text-anchor="middle" font-size="11" fill="var(--muted)">found</text>`;
+  $("#donut").setAttribute("aria-label", `${S.found||0} found: ${counts.top} top, ${counts.review} worth reviewing, ${counts.watch} watchlist, ${counts.filtered} filtered`);
+})();
+$("#counts").innerHTML = ["top","review","watch","filtered"].map(k =>
+  `<button class="count" type="button" data-seg="${k}"><b>${counts[k]}</b><span><i style="background:${CAT[k].color}"></i>${CAT[k].label}</span></button>`).join("");
+$("#funnel").innerHTML = `<span>Found <strong>${S.found||0}</strong></span><span>Passed first filter <strong>${S.passed||0}</strong></span><span>Fully reviewed <strong>${S.reviewed||0}</strong></span>`;
+document.querySelectorAll(".count").forEach(b => b.addEventListener("click", () => { state.seg = b.dataset.seg; render(); $("#all").scrollIntoView({behavior:"smooth"}); }));
+
+/* shortlist */
+function daysBlock(o){
+  const d = o.deadline || {}; const cls = d.flag || "none";
+  if (d.days == null) return `<div class="days none"><b>–</b><span>No deadline</span></div>`;
+  if (d.days < 0) return `<div class="days expired"><b>0</b><span>Closed</span></div>`;
+  return `<div class="days ${esc(cls)}"><b>${Math.floor(d.days)}</b><span>${Math.floor(d.days)===1?"day left":"days left"}</span></div>`;
+}
+function folder(o){
+  const c = CAT[o.category] || CAT.watch;
+  return `<button class="folder" type="button" data-id="${esc(o.id)}" aria-label="${esc(o.title)}">
+    <span class="tab"><i style="background:${c.color}"></i>${esc(c.label)}</span>
+    <div class="sheet">
+      <div class="sheet-head"><div><h3>${esc(o.title)}</h3><p class="agency">${esc(o.government)}, ${esc(o.location)}</p></div>${daysBlock(o)}</div>
+      <div class="facts4">
+        <div><small>Value</small><strong title="${esc(o.value)}">${esc(o.value)}</strong></div>
+        <div><small>Service</small><strong title="${esc(o.service)}">${esc(o.service)}</strong></div>
+        <div><small>Startup</small><strong>${esc(o.startup||"–")}</strong></div>
+        <div><small>Outsource</small><strong>${esc(o.outsource||"–")}</strong></div>
+      </div>
+      <p class="why">${esc(o.why)}</p>
+      ${o.risk ? `<p class="risk"><b>Risk:</b> ${esc(o.risk)}</p>` : ""}
+      ${o.decision ? `<span class="stamp ${esc(o.decision)}">${esc(STAMP[o.decision]||o.decision)}</span>` : ""}
+    </div></button>`;
+}
+function renderShortlist(){
+  const list = OPPS.filter(o => o.category === "top" || o.category === "review")
+    .sort((a,b) => (a.category===b.category ? (b.score||0)-(a.score||0) : a.category==="top" ? -1 : 1));
+  if (!OPPS.length && !(D.stats||{}).found) {
+    $("#shortlist").innerHTML = `<div class="empty"><strong>No results yet.</strong> The first search runs automatically within a day of setup. To run it now, open the repository on GitHub: Actions, then Contract Scout, then Run workflow.${M.is_demo ? "" : ` <a href="demo/">See a sample dashboard</a>.`}</div>`;
+    return;
+  }
+  if (!list.length) {
+    const w = OPPS.filter(o => o.category==="watch").sort((a,b)=>(b.score||0)-(a.score||0))[0];
+    $("#shortlist").innerHTML = `<div class="empty"><strong>No strong opportunities found this cycle.</strong>${w ? ` The strongest watchlist item is below.` : ""}</div>` + (w ? folder(w) : "");
+  } else $("#shortlist").innerHTML = list.map(folder).join("");
+}
+
+/* list */
+const state = {seg: "all", market: "", service: "", sort: "score", q: "", limit: 60};
+const SEGS = [["top","Top"],["review","Worth reviewing"],["watch","Watchlist"],["filtered","Filtered"],["expired","Closed"],["all","All open"]];
+function haystack(o){ return [o.title,o.government,o.office,o.service,o.location,o.market_label,o.solicitation_number,o.id,o.summary,o.naics,o.set_aside,o.filter_reason].join(" ").toLowerCase(); }
+OPPS.forEach(o => o._h = haystack(o));
+function matchesBase(o){
+  if (state.market && o.market !== state.market) return false;
+  if (state.service && o.service_key !== state.service) return false;
+  if (state.q) { for (const t of state.q.split(/\s+/)) if (t && !o._h.includes(t)) return false; }
+  return true;
+}
+function inSeg(o, seg){ return seg === "all" ? o.category !== "expired" : o.category === seg; }
+function sorter(a,b){
+  if (state.sort === "deadline") return (a.deadline.days ?? 1e9) - (b.deadline.days ?? 1e9);
+  if (state.sort === "value") return ((b.value_num || parseVal(b)) - (a.value_num || parseVal(a)));
+  if (state.sort === "new") return (b.discovered_iso||"").localeCompare(a.discovered_iso||"") || 0;
+  const rank = {top:0,review:1,watch:2,filtered:3,expired:4};
+  return (rank[a.category]-rank[b.category]) || ((b.score||0)-(a.score||0));
+}
+function parseVal(o){ const m = String(o.value||"").match(/\$([\d.,]+)\s*([KM])?/); if(!m) return -1; let n = parseFloat(m[1].replace(/,/g,"")); if (m[2]==="K") n*=1e3; if (m[2]==="M") n*=1e6; return n; }
+function row(o){
+  const c = CAT[o.category] || CAT.watch, d = o.deadline || {};
+  const reason = o.category === "filtered" ? `<div class="reason">❌ ${esc(o.filter_reason)}</div>` : "";
+  return `<button class="row" type="button" data-id="${esc(o.id)}">
+    <span class="dot" style="background:${c.color}" title="${esc(c.label)}"></span>
+    <div><h4>${esc(o.title)}</h4>
+      <div class="meta"><span>${esc(o.government)}</span><span>${esc(o.location)}</span><span>${esc(o.service)}</span>${o.decision?`<span class="chip ${esc(o.decision)}">${esc(STAMP[o.decision]||o.decision)}</span>`:""}</div>${reason}</div>
+    <div class="right"><b>${esc(d.emoji||"")} ${esc(d.label||"")}</b>${esc(o.value)}</div></button>`;
+}
+function render(){
+  const base = OPPS.filter(matchesBase);
+  $("#seg").innerHTML = SEGS.map(([k,l]) => `<button type="button" data-k="${k}" aria-pressed="${state.seg===k}">${l}<em>${base.filter(o=>inSeg(o,k)).length}</em></button>`).join("");
+  $("#seg").querySelectorAll("button").forEach(b => b.addEventListener("click", () => { state.seg = b.dataset.k; state.limit = 60; render(); }));
+  const list = base.filter(o => inSeg(o, state.seg)).sort(sorter);
+  $("#rows").innerHTML = list.slice(0, state.limit).map(row).join("") ||
+    `<div class="empty">Nothing matches. ${state.q ? "Try a shorter search, or pick All open." : "Try another filter."}</div>`;
+  $("#more").hidden = list.length <= state.limit;
+}
+function fillSelects(){
+  const mk = [...new Set(OPPS.map(o=>o.market).filter(Boolean))];
+  $("#market").innerHTML = `<option value="">All markets</option>` + mk.map(k => `<option value="${esc(k)}">${esc((M.markets||{})[k]||k)}</option>`).join("");
+  const sv = [...new Set(OPPS.map(o=>o.service_key).filter(Boolean))].sort((a,b)=>((M.services||{})[a]||a).localeCompare((M.services||{})[b]||b));
+  $("#service").innerHTML = `<option value="">All services</option>` + sv.map(k => `<option value="${esc(k)}">${esc((M.services||{})[k]||k)}</option>`).join("");
+}
+$("#market").addEventListener("change", e => { state.market = e.target.value; render(); });
+$("#service").addEventListener("change", e => { state.service = e.target.value; render(); });
+$("#sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
+$("#more").addEventListener("click", () => { state.limit += 60; render(); });
+let qt; $("#q").addEventListener("input", e => { clearTimeout(qt); qt = setTimeout(() => {
+  state.q = e.target.value.trim().toLowerCase(); if (state.q && state.seg !== "all" && state.seg !== "expired") state.seg = "all"; render();
+  if (state.q) $("#all").scrollIntoView({behavior:"smooth", block:"start"}); }, 160); });
+
+/* detail sheet */
+function li(items, fmt){ return (items||[]).length ? `<ul>${items.map(fmt).join("")}</ul>` : `<p class="ev">None found in the text reviewed.</p>`; }
+function checklist(items, mark){
+  if (!(items||[]).length) return `<p class="ev">None found in the text reviewed.</p>`;
+  return `<ul class="check">${items.map(i => `<li><span>${mark}</span><div>${esc(i.item)}${i.evidence?`<div class="ev">${esc(i.evidence)}</div>`:""}</div></li>`).join("")}</ul>`;
+}
+function link(u, label){ const s = safeUrl(u); return s ? `<a href="${esc(s)}" target="_blank" rel="noopener">${esc(label||s)}</a>` : esc(label||""); }
+function fmtMoney(v){ if (v == null || v === "") return "Not listed"; v = +v; if (v >= 1e6) return "$"+(v/1e6).toFixed(1)+"M"; if (v >= 1e4) return "$"+Math.round(v/1e3)+"K"; return "$"+Math.round(v).toLocaleString(); }
+function detailHTML(o){
+  const c = CAT[o.category] || CAT.watch, d = o.deadline || {};
+  const st = o.strategy || {}, sub = o.subcontracting || {}, aw = o.awards || {}, req = o.requirements || {}, red = o.red_team || {};
+  const facts = [["Service",o.service],...(o.vehicle?[["Contract type",o.vehicle]]:[]),["Location",o.location],["Contract value",o.value + (o.value_basis?` (${o.value_basis})`:"")],
+    ["Deadline",`${d.emoji||""} ${d.date||"Not listed"} (${d.label||""})`],["Startup",o.startup],["Outsource potential",o.outsource],
+    ["Previous winner",o.previous_winner],["Previous award",o.previous_award],["Set-aside",o.set_aside||"None listed"],
+    ["NAICS",o.naics||"Not listed"],["Notice type",o.notice],["Contract length",o.contract_length||"Not listed"],
+    ["Solicitation",o.solicitation_number||"Not listed"],["Source",o.source_name],["First found",o.discovered],["Match score",o.score!=null?`${o.score} / 100`:"Not scored"]]
+    .filter(([,v]) => v !== undefined && v !== "");
+  let h = `<h2 id="dTitle">${esc(o.title)}</h2><p class="agency">${esc(o.government)}${o.office?`, ${esc(o.office)}`:""}</p>`;
+  if (o.decision) h += `<div class="big-stamp ${esc(o.decision)}">${esc(STAMP[o.decision]||o.decision)}</div>${o.decision_reason?`<p class="ev">Reason: ${esc(o.decision_reason)}${o.decision_date?` (${esc(o.decision_date)})`:""}</p>`:""}`;
+  h += `<div class="actions">${safeUrl(o.url)?`<a class="btn primary" href="${esc(safeUrl(o.url))}" target="_blank" rel="noopener">Open official solicitation ↗</a>`:""}
+        <button class="btn" type="button" data-copy="${esc(o.id)}">Copy link</button>
+        ${OWNER ? `<button class="btn go" type="button" data-decide="PURSUE">Pursue</button><button class="btn watch" type="button" data-decide="WATCH">Watch</button><button class="btn pass" type="button" data-decide="PASS">Pass</button>` : ""}</div>`;
+  if (OWNER) h += `<p class="owner-note">${M.repo ? "Pursue, Watch, and Pass open a pre-filled GitHub issue. Submit it and the dashboard updates in a couple of minutes." : `Run <code>python main.py mark ${esc(o.id)} pursue</code> to record a decision.`}</p>`;
+  if ((o.changes||[]).length) h += `<div class="panel callout"><h3>What changed</h3>${li(o.changes, n => `<li>${esc(n)}</li>`)}</div>`;
+  h += `<div class="grid">${facts.map(([k,v]) => `<div><small>${esc(k)}</small><strong>${esc(v)}</strong></div>`).join("")}</div>`;
+  if (o.category === "filtered") h += `<div class="panel callout red"><h3>Why it was filtered</h3><p>${esc(o.filter_reason)}</p></div>`;
+  if (o.why) h += `<div class="panel"><h3>Why it made the list</h3><p>${esc(o.why)}</p>${o.risk?`<h3 style="margin-top:12px">Biggest risk</h3><p>${esc(o.risk)}</p>`:""}</div>`;
+  if ((st.next_steps||[]).length) h += `<div class="panel"><h3>What to do next</h3><ol>${st.next_steps.map(s=>`<li>${esc(s)}</li>`).join("")}</ol></div>`;
+  if (o.summary && !o.why) h += `<div class="panel"><h3>Description</h3><p>${esc(o.summary)}</p></div>`;
+  if (aw.summary) {
+    h += `<div class="panel"><h3>Here's what happened last time</h3><p>${esc(aw.summary)}</p>`;
+    const rowsA = (aw.exact||[]).concat(aw.similar||[]);
+    if (rowsA.length) h += `<div class="t-wrap"><table class="t"><tr><th>Winner</th><th>Amount</th><th>Period</th><th>Agency</th></tr>${rowsA.map(a =>
+      `<tr><td>${a.url?link(a.url,a.recipient):esc(a.recipient)}</td><td>${esc(fmtMoney(a.amount))}</td><td>${esc((a.start||"?")+" to "+(a.end||"?"))}</td><td>${esc(a.agency||"")}</td></tr>`).join("")}</table></div>`;
+    if ((aw.local_matches||[]).length) h += li(aw.local_matches, m => `<li>${link(m.url, m.title)}${m.closed?` <span class="ev">closed ${esc(m.closed)}</span>`:""}</li>`);
+    if (aw.awards_url) h += `<p>${link(aw.awards_url, "Official bid tabulations and awards ↗")}</p>`;
+    if ((aw.sources||[]).length) h += `<p class="ev">Source: ${esc(aw.sources.join(", "))}</p>`;
+    h += `</div>`;
+  }
+  if (req.must_have) h += `<div class="panel"><h3>Requirements checklist</h3>
+      <details open><summary>Must have (${req.must_have.length})</summary>${checklist(req.must_have,"☐")}</details>
+      <details><summary>Nice to have (${(req.nice_to_have||[]).length})</summary>${checklist(req.nice_to_have,"＋")}</details>
+      <details ${(req.potential_problems||[]).length?"open":""}><summary>Potential problems (${(req.potential_problems||[]).length})</summary>${checklist(req.potential_problems,"⚠️")}</details>
+      <details><summary>Confirm in the full packet (${(req.to_confirm||[]).length})</summary>${checklist(req.to_confirm,"?")}</details></div>`;
+  if (sub.status) {
+    const parts = String(sub.model||"").split("→").map(s=>s.trim()).filter(Boolean);
+    h += `<div class="panel"><h3>Subcontracting: ${esc(sub.status_label||sub.status)}</h3><p>${esc(sub.explanation)}</p>
+      ${parts.length>1?`<div class="chain">${parts.map(p=>`<span>${esc(p)}</span>`).join("<b>→</b>")}</div>`:`<p><strong>${esc(sub.model)}</strong></p>`}
+      ${(sub.findings||[]).length?`<details><summary>Evidence (${sub.findings.length})</summary>${li(sub.findings, f=>`<li>${esc(f.finding)}<div class="ev">${esc(f.evidence)}</div></li>`)}</details>`:""}
+      ${(sub.questions||[]).length?`<details><summary>Ask the buyer</summary>${li(sub.questions, q=>`<li>${esc(q)}</li>`)}</details>`:""}
+      ${(sub.references||[]).length?`<p class="ev">${sub.references.map(r=>link(r)).join(" · ")}</p>`:""}</div>`;
+  }
+  if (st.what_government_wants) {
+    const sec = [["What the government wants",[st.what_government_wants]],["What the LLC would need",st.what_llc_needs],["Subcontractor type",[st.subcontractor_type]],
+      ["Estimated startup cost",st.startup_cost],["Potential revenue",[st.revenue]],["Major costs",st.major_costs],["Major risks",st.major_risks],
+      ["Questions that need answers",st.questions],["Documents needed",st.documents_needed],["Suggested next steps",st.next_steps]];
+    h += `<div class="panel"><h3>Bid strategy</h3>${sec.map(([t,items],i)=>`<details ${i===0?"open":""}><summary>${i+1}. ${esc(t)}</summary>${li((items||[]).filter(Boolean), x=>`<li>${esc(x)}</li>`)}</details>`).join("")}
+      ${st.disclaimer?`<p class="ev">${esc(st.disclaimer)}</p>`:""}</div>`;
+  }
+  if (red.verdict) {
+    const vtxt = {fails:"Did not survive: at least one deal-breaker", survives_with_risks:"Survived, with risks to resolve", survives:"Survived"}[red.verdict] || red.verdict;
+    h += `<div class="panel"><h3>Red-team review: ${esc(vtxt)}</h3>${li(red.findings, f=>`<li><span class="sev ${esc(f.severity)}">${esc(f.severity)}</span><strong>${esc(f.area)}:</strong> ${esc(f.message)}${f.evidence?`<div class="ev">${esc(f.evidence)}</div>`:""}</li>`)}</div>`;
+  }
+  if ((o.factors||[]).length) h += `<div class="panel"><h3>Score breakdown</h3><p class="ev">Each factor is 0 to 10. Higher means a better fit for a small, subcontract-friendly LLC.</p><div class="bars">${o.factors.map(f=>
+      `<div class="bar"><span>${esc(f.label)}</span><div class="track"><div class="fill" style="width:${Math.max(0,Math.min(10,+f.value))*10}%;background:${f.value>=7?"var(--go)":f.value>=4.5?"var(--amber)":"var(--stamp)"}"></div></div><b>${esc(f.value)}</b></div>`).join("")}</div></div>`;
+  if ((o.drafts||[]).length) h += `<div class="panel"><h3>Drafts</h3><p class="ev">Starting points to edit. Anything marked ⚠️ needs professional review.</p>${o.drafts.map(dr=>
+      `<details><summary>${esc(dr.title)}</summary>${dr.review?`<p class="ev">${esc(dr.review)}</p>`:""}<pre class="draft">${esc(dr.text)}</pre><button class="btn" type="button" data-copytext="${esc(dr.key)}">Copy</button></details>`).join("")}</div>`;
+  if ((o.attachments||[]).length || (o.references||[]).length) h += `<div class="panel"><h3>Documents and references</h3>${li((o.attachments||[]).concat((o.references||[]).map(r=>({name:r.label,url:r.url}))), a=>`<li>${a.url?link(a.url,a.name||a.url):esc(a.name)}</li>`)}</div>`;
+  h += `<p class="ev">ID ${esc(o.id)}. Last checked ${esc(o.last_checked||"")}. Verify every detail in the official solicitation.</p>`;
+  return h;
+}
+let lastFocus = null, current = null;
+function openDetail(id, push){
+  const o = byId[id]; if (!o) return;
+  current = o; lastFocus = document.activeElement;
+  $("#dCat").textContent = (CAT[o.category]||CAT.watch).label;
+  $("#dBody").innerHTML = detailHTML(o); $("#dBody").scrollTop = 0;
+  const dEl = $("#detail"); dEl.hidden = false; requestAnimationFrame(() => dEl.classList.add("open"));
+  $("#overlay").classList.add("open"); document.body.classList.add("locked");
+  if (push !== false && location.hash !== "#"+id) history.replaceState(null, "", "#"+id);
+  $("#dClose").focus();
+  $("#dBody").querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => copy(pageUrl()+"#"+b.dataset.copy, "Link copied")));
+  $("#dBody").querySelectorAll("[data-copytext]").forEach(b => b.addEventListener("click", () => { const d = (o.drafts||[]).find(x=>x.key===b.dataset.copytext); if (d) copy(d.text, "Draft copied"); }));
+  $("#dBody").querySelectorAll("[data-decide]").forEach(b => b.addEventListener("click", () => decide(o, b.dataset.decide)));
+}
+function closeDetail(){
+  const dEl = $("#detail"); dEl.classList.remove("open"); $("#overlay").classList.remove("open"); document.body.classList.remove("locked");
+  setTimeout(() => { if (!dEl.classList.contains("open")) dEl.hidden = true; }, 220);
+  if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  current = null; if (lastFocus && lastFocus.focus) lastFocus.focus();
+}
+$("#dClose").addEventListener("click", closeDetail);
+$("#overlay").addEventListener("click", closeDetail);
+document.addEventListener("keydown", e => { if (e.key === "Escape" && current) closeDetail(); });
+document.addEventListener("click", e => { const t = e.target.closest("[data-id]"); if (t) openDetail(t.dataset.id); });
+window.addEventListener("hashchange", () => { const id = location.hash.slice(1); if (byId[id]) openDetail(id, false); });
+
+function pageUrl(){ return (M.site_url && !M.is_demo) ? M.site_url : location.href.split("#")[0].split("?")[0]; }
+function toast(msg){ const t = $("#toast"); t.textContent = msg; t.classList.add("show"); clearTimeout(t._h); t._h = setTimeout(()=>t.classList.remove("show"), 1800); }
+function copy(text, msg){
+  const done = () => toast(msg);
+  if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, () => fallback());
+  else fallback();
+  function fallback(){ const ta = document.createElement("textarea"); ta.value = text; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select(); try { document.execCommand("copy"); done(); } catch(e){ toast("Copy failed"); } ta.remove(); }
+}
+function decide(o, decision){
+  if (!M.repo) { copy(`python main.py mark ${o.id} ${decision.toLowerCase()} --reason ""`, "Command copied"); return; }
+  const title = `${decision} ${o.id}`;
+  const body = `Reason (optional, one line):\n\n\n---\n${o.title}\nRecorded from the dashboard. The decisions workflow saves this and closes the issue.`;
+  window.open(`https://github.com/${encodeURI(M.repo)}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=decision`, "_blank", "noopener");
+}
+$("#shareBtn").addEventListener("click", () => {
+  const url = pageUrl();
+  if (navigator.share) navigator.share({title: M.title || document.title, url}).catch(()=>{});
+  else copy(url, "Dashboard link copied");
+});
+
+/* contract vehicles: teaming leads */
+(function vehicles(){
+  const leads = ((D.vehicles||{}).leads||[]).filter(l => l && l.holder);
+  if (!leads.length) return;
+  $("#vehicles").hidden = false;
+  const day = v => { const m = String(v||"").match(/^(\d{4})-(\d{2})-(\d{2})/); if (!m) return String(v||"");
+    return new Date(+m[1], +m[2]-1, +m[3]).toLocaleDateString("en-US", {month:"short", day:"numeric", year:"numeric"}); };
+  const timing = l => l.last_order_date ? `Takes orders through ${day(l.last_order_date)}` : (l.award_date ? `Awarded ${day(l.award_date)}` : "");
+  const card = l => `<li><div class="who">${link(l.url, l.holder)}${l.amount != null ? `<b>${esc(fmtMoney(l.amount))}</b>` : ""}</div>` +
+    `<p class="what">${esc(l.description||l.title||"")}</p>` +
+    `<div class="meta">${esc([l.agency, l.vehicle, timing(l)].filter(Boolean).join(". "))}</div></li>`;
+  const draw = n => { $("#leads").innerHTML = leads.slice(0, n).map(card).join(""); $("#moreLeads").hidden = leads.length <= n; };
+  draw(6);
+  $("#moreLeads").addEventListener("click", () => draw(leads.length));
+})();
+
+/* footer: sources + discovery */
+(function footer(){
+  const SL = {ok:"Working",empty:"Reached, nothing open",error:"Error",manual:"Check by hand",setup:"Needs setup"};
+  const src = D.sources || [];
+  $("#sources").innerHTML = src.length ? `<tr><th>Source</th><th>Market</th><th>Status</th><th>Items</th></tr>` + src.map(s =>
+    `<tr><td>${link(s.info_url||s.url, s.name)}${s.message?`<div class="ev">${esc(s.message)}</div>`:""}</td><td>${esc((M.markets||{})[s.market]||(s.market==="all"?"All markets":s.market))}</td><td><span class="status ${esc(s.status)}">${esc(SL[s.status]||s.status)}</span></td><td>${esc(s.count)}</td></tr>`).join("")
+    : `<tr><td class="ev">Source health appears after the first run.</td></tr>`;
+  const dv = D.discovery || {}; let h = "";
+  if ((dv.related_suggestions||[]).length || (dv.new_categories||[]).length || (dv.ideas||[]).length) {
+    h += `<h2 class="sec">New directions the agent noticed</h2><ul class="ideas">`;
+    for (const r of dv.related_suggestions||[]) h += `<li>${esc(r.because)}. Related lines: ${esc((r.suggest||[]).join(", "))}.</li>`;
+    for (const n of dv.new_categories||[]) h += `<li>New category seen ${esc(n.count)}×: <strong>${esc(n.label)}</strong>${(n.examples||[]).length?` <span class="ev">e.g. ${esc(n.examples[0])}</span>`:""}</li>`;
+    for (const i of dv.ideas||[]) h += `<li>${esc(i)}</li>`;
+    h += `</ul>`;
+  }
+  $("#discovery").innerHTML = h;
+  $("#ownerHelp").textContent = OWNER ? "Owner mode is on for this device. Add ?owner=0 to the address to turn it off." : "";
+})();
+
+fillSelects(); renderShortlist(); render();
+if (location.hash && byId[location.hash.slice(1)]) openDetail(location.hash.slice(1), false);
+})();
+</script>
+</body>
+</html>

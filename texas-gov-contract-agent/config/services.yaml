@@ -1,0 +1,330 @@
+# Service categories the scout looks for. To add one, copy a block and change it (README §7).
+#
+#   keywords     words/phrases that identify the service (title matches count most)
+#   naics        NAICS codes commonly used for it (federal notices carry one)
+#   startup      low | medium | high   — typical cost to stand up the work
+#   outsource    high | medium | low   — how naturally it fits a manage-and-subcontract model
+#   margin       low | medium | high   — typical margin for a managing prime
+#   licenses     licenses often required in Texas (the Requirements agent still reads the actual solicitation)
+#   subcontractor what kind of vendor would do the work
+#   related      categories the Discovery agent suggests when this one shows up a lot
+#   exclude      (optional) title words that mean it's a different, specialized trade
+#
+# Profiles are starting assumptions, not facts about any specific solicitation.
+
+categories:
+  janitorial:
+    label: "Janitorial / custodial"
+    keywords: [janitorial, custodial, building cleaning, office cleaning, cleaning services, housekeeping,
+               day porter, restroom cleaning, sanitization, disinfection, facility cleaning, floor care,
+               carpet cleaning, strip and wax, floor stripping]
+    naics: ["561720"]
+    startup: low
+    outsource: high
+    margin: low
+    licenses: []
+    subcontractor: "Commercial janitorial company with its own crews and supervisor"
+    related: [window_cleaning, pressure_washing, pest_control, waste_hauling, post_construction_cleaning]
+
+  post_construction_cleaning:
+    label: "Post-construction / make-ready cleaning"
+    keywords: [post-construction cleaning, post construction clean, construction cleanup, final clean,
+               make-ready, make ready, turnover cleaning, move-out cleaning, rough clean]
+    naics: ["561720", "238990"]
+    startup: low
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: "Post-construction cleaning crew"
+    related: [janitorial, pressure_washing, window_cleaning, waste_hauling]
+
+  pressure_washing:
+    label: "Pressure washing"
+    keywords: [pressure washing, power washing, pressure wash, soft wash, surface cleaning, hydro washing,
+               parking garage cleaning, sidewalk washing]
+    naics: ["561790"]
+    startup: low
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: "Pressure-washing contractor with water reclamation equipment"
+    related: [graffiti_street_cleaning, parking_lot, window_cleaning]
+
+  window_cleaning:
+    label: "Window cleaning"
+    keywords: [window cleaning, window washing, glass cleaning, high-rise window]
+    naics: ["561720", "561790"]
+    startup: low
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: "Window-cleaning company (rope/lift certified for high-rise)"
+    related: [janitorial, pressure_washing]
+
+  landscaping:
+    label: "Landscaping / grounds maintenance"
+    keywords: [landscaping, landscape maintenance, lawn maintenance, mowing, grounds maintenance,
+               grounds keeping, groundskeeping, turf maintenance, irrigation, right-of-way mowing,
+               vegetation management, herbicide application, litter removal and mowing]
+    naics: ["561730"]
+    startup: medium
+    outsource: high
+    margin: medium
+    licenses: ["TDA pesticide applicator license if herbicides are applied",
+               "TCEQ irrigator license for irrigation work"]
+    subcontractor: "Commercial landscaping / mowing contractor"
+    related: [tree_services, debris_removal, pest_control, graffiti_street_cleaning]
+
+  tree_services:
+    label: "Tree trimming / removal / stump grinding"
+    keywords: [tree trimming, tree removal, tree pruning, tree care, arborist, stump grinding,
+               stump removal, vegetation clearing, brush clearing, right-of-way clearing]
+    naics: ["561730", "115310"]
+    startup: medium
+    outsource: high
+    margin: medium
+    licenses: ["ISA Certified Arborist often required on staff or as a sub"]
+    subcontractor: "Tree service with bucket truck, chipper, and stump grinder"
+    related: [debris_removal, landscaping]
+
+  debris_removal:
+    label: "Debris / storm cleanup / junk removal"
+    keywords: [debris removal, storm cleanup, storm debris, disaster debris, junk removal, bulk trash,
+               illegal dumping, litter abatement, trash pickup, clean-up services, cleanup services,
+               hauling services]
+    naics: ["562119", "562111", "562998"]
+    startup: medium
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: "Hauler with dump trucks / roll-offs and disposal agreements"
+    related: [tree_services, waste_hauling, graffiti_street_cleaning]
+
+  waste_hauling:
+    label: "Waste hauling / liquid waste / grease traps"
+    keywords: [refuse collection, solid waste collection, roll-off, dumpster service, grease trap,
+               lint trap, pump-out, pump out, septic, liquid waste, portable toilet, portable restroom]
+    naics: ["562111", "562991", "562219"]
+    startup: medium
+    outsource: high
+    margin: medium
+    licenses: ["TCEQ registration for liquid waste transporters"]
+    subcontractor: "Registered waste / liquid-waste hauler"
+    related: [debris_removal, janitorial, event_support]
+
+  parking_lot:
+    label: "Parking lot sweeping / striping / sealcoating"
+    keywords: [parking lot sweeping, parking lot striping, pavement marking, sealcoating, seal coating,
+               sweeping services, lot sweeping, crack sealing, curb painting, wheel stops]
+    naics: ["561790", "238990"]
+    startup: medium
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: "Sweeping or striping contractor"
+    related: [pressure_washing, graffiti_street_cleaning]
+
+  graffiti_street_cleaning:
+    label: "Graffiti removal / street & sidewalk cleaning"
+    keywords: [graffiti removal, graffiti abatement, street sweeping, sidewalk cleaning, right of way cleaning,
+               litter pickup, downtown cleaning, homeless encampment cleanup, encampment cleanup]
+    naics: ["561790", "488490"]
+    startup: low
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: "Pressure-washing / litter crew contractor"
+    related: [pressure_washing, debris_removal, parking_lot]
+
+  pest_control:
+    label: "Pest control"
+    keywords: [pest control, extermination, exterminating, termite, rodent control, integrated pest management,
+               mosquito control, bird control, pest management]
+    naics: ["561710"]
+    startup: low
+    outsource: high
+    margin: medium
+    licenses: ["Texas Department of Agriculture Structural Pest Control business license (the company doing the work)"]
+    subcontractor: "TDA-licensed structural pest control business"
+    related: [janitorial, landscaping]
+
+  facility_maintenance:
+    label: "Facility maintenance / minor repairs / painting / flooring"
+    keywords: [facility maintenance, building maintenance, minor repairs, handyman, general repairs,
+               maintenance and repair, painting services, interior painting, exterior painting, drywall,
+               flooring installation, carpet installation, ceiling tile, door repair, make-ready repairs]
+    exclude: [elevator, escalator, fire alarm, fire sprinkler, sprinkler system, generator, roof replacement, boiler, chiller]
+    naics: ["561210", "238320", "238330", "236118"]
+    startup: medium
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: "General maintenance / painting / flooring contractors"
+    related: [hvac_plumbing_electrical, janitorial, pest_control]
+
+  hvac_plumbing_electrical:
+    label: "HVAC / plumbing / electrical maintenance"
+    keywords: [hvac maintenance, air conditioning maintenance, heating and cooling, chiller maintenance,
+               boiler maintenance, plumbing services, plumbing repair, backflow testing, electrical services,
+               electrical repair, lighting retrofit, generator maintenance, preventive maintenance hvac]
+    naics: ["238220", "238210"]
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: ["TDLR Air Conditioning & Refrigeration Contractor license (HVAC)",
+               "TSBPE master plumber (plumbing)", "TDLR electrical contractor license (electrical)"]
+    subcontractor: "Licensed mechanical, plumbing, or electrical contractor"
+    related: [facility_maintenance]
+
+  moving:
+    label: "Moving / relocation"
+    keywords: [moving services, relocation services, office relocation, furniture moving, movers,
+               furniture installation, surplus pickup]
+    naics: ["484210"]
+    startup: medium
+    outsource: high
+    margin: medium
+    licenses: ["TxDMV household goods carrier registration (household moves)"]
+    subcontractor: "Commercial moving company"
+    related: [courier_delivery, warehouse]
+
+  courier_delivery:
+    label: "Courier / delivery"
+    keywords: [courier services, courier service, delivery services, mail delivery, messenger service,
+               pickup and delivery, specimen transport, interoffice mail]
+    naics: ["492110", "492210"]
+    startup: low
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: "Courier company or vetted independent drivers (check employment-law rules)"
+    related: [moving, document_destruction]
+
+  document_destruction:
+    label: "Records / document destruction"
+    keywords: [document destruction, shredding, records destruction, secure destruction, media destruction,
+               paper shredding, records storage, document imaging]
+    naics: ["561990", "493190"]
+    startup: low
+    outsource: high
+    margin: high
+    licenses: ["NAID AAA certification often required for the shredding vendor"]
+    subcontractor: "NAID AAA-certified shredding company"
+    related: [courier_delivery, moving]
+
+  transportation:
+    label: "Non-emergency / accessible transportation"
+    keywords: [non-emergency medical transportation, nemt, wheelchair transportation, wheelchair van,
+               paratransit, accessible transportation, shuttle services, van transportation, transportation services,
+               charter bus, student transportation, patient transport]
+    naics: ["485991", "485999", "485410", "485510"]
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: ["Commercial auto insurance at high limits", "Drug & alcohol testing program (often FTA/DOT rules)"]
+    subcontractor: "Licensed transportation provider with ADA-accessible vehicles"
+    related: [courier_delivery, staffing]
+
+  vehicle_services:
+    label: "Vehicle washing / detailing / fleet services"
+    keywords: [vehicle washing, car wash, fleet washing, detailing, vehicle detailing, fleet maintenance,
+               towing services, wrecker services, vehicle cleaning]
+    naics: ["811192", "811111", "488410"]
+    startup: low
+    outsource: high
+    margin: medium
+    licenses: ["TDLR tow operator license (towing)"]
+    subcontractor: "Mobile fleet-wash or detailing company"
+    related: [pressure_washing, parking_lot]
+
+  staffing:
+    label: "Temporary labor / staffing"
+    keywords: [temporary staffing, temporary labor, temp labor, staffing services, temporary personnel,
+               day labor, labor services, event staffing]
+    naics: ["561320", "561311"]
+    startup: low
+    outsource: medium
+    margin: low
+    licenses: []
+    subcontractor: "Staffing agency (you usually carry payroll float — cash-flow heavy)"
+    related: [event_support, warehouse]
+
+  event_support:
+    label: "Event support / rentals"
+    keywords: [event support, event setup, tent rental, event services, barricade rental, stage rental,
+               crowd control, special events, portable restrooms for events]
+    naics: ["561920", "532289"]
+    startup: medium
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: "Event rental / setup company"
+    related: [waste_hauling, staffing, security]
+
+  security:
+    label: "Security services"
+    keywords: [security guard, security services, unarmed guard, armed guard, patrol services, fire watch,
+               access control officer]
+    naics: ["561612"]
+    startup: medium
+    outsource: medium
+    margin: low
+    licenses: ["Texas DPS Private Security Program company license (Class B) for the guard company"]
+    subcontractor: "DPS-licensed guard company"
+    related: [event_support]
+
+  equipment_rental:
+    label: "Equipment rental"
+    keywords: [equipment rental, generator rental, heavy equipment rental, lift rental, rental equipment]
+    naics: ["532412", "532490"]
+    startup: high
+    outsource: medium
+    margin: low
+    licenses: []
+    subcontractor: "Rental house (broker model)"
+    related: [event_support]
+
+  warehouse:
+    label: "Warehouse / logistics support"
+    keywords: [warehousing, warehouse services, storage services, inventory management, logistics support,
+               material handling]
+    naics: ["493110"]
+    startup: high
+    outsource: medium
+    margin: low
+    licenses: []
+    subcontractor: "3PL / warehouse operator"
+    related: [moving, courier_delivery]
+
+  laundry:
+    label: "Laundry / linen"
+    keywords: [laundry services, linen services, linen rental, uniform rental, mat rental, mop service]
+    naics: ["812320", "812332"]
+    startup: medium
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: "Industrial laundry / linen service"
+    related: [janitorial]
+
+  snow_ice:
+    label: "Snow / ice services"
+    keywords: [snow removal, ice removal, deicing, de-icing, winter weather response]
+    naics: ["561790"]
+    startup: medium
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: "Contractor with plows / spreaders"
+    related: [debris_removal, parking_lot]
+
+# Phrases that mark a notice as goods-only (a supply purchase, not a service).
+supply_signals: ["supplies", "supply of", "purchase of", "parts", "equipment purchase", "furnish and deliver",
+                 "brand name", "or equal", "commodities", "products", "materials", "vehicle purchase"]
+
+# Phrases that indicate major construction or professional services outside the model.
+out_of_scope_signals: ["new construction", "design-build", "design build", "construction manager at risk",
+                       "cmar", "general contractor", "architectural services", "engineering services",
+                       "bridge replacement", "roadway reconstruction", "paving project", "software",
+                       "information technology", "it services", "medical services", "legal services",
+                       "audit services", "financial advisor", "underwriting", "pharmaceutical"]

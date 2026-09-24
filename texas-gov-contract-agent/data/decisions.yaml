@@ -1,0 +1,3 @@
+# Your decisions. Edit by hand, run `python main.py mark TX-XXXXXX pursue`,
+# or tap Pursue / Watch / Pass on the dashboard (owner mode). See README section 9.
+decisions: []

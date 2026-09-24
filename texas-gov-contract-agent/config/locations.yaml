@@ -1,0 +1,46 @@
+# Target markets. An opportunity is matched to a market by city, county, ZIP prefix,
+# or a named installation. To add/remove a market, edit this file (see README §6).
+markets:
+  dfw:
+    label: "Dallas / Fort Worth"
+    enabled: true
+    cities: [Dallas, Fort Worth, Arlington, Irving, Garland, Plano, Grand Prairie, Mesquite,
+             Richardson, Carrollton, Denton, Frisco, McKinney, Lewisville, Grapevine, Euless,
+             Bedford, Hurst, Duncanville, DeSoto, Lancaster, Cedar Hill, Rowlett, Allen, Addison,
+             Farmers Branch, Coppell, Haltom City, North Richland Hills, Mansfield, Keller,
+             Southlake, Weatherford, Burleson, Wylie, Rockwall, Sachse, Balch Springs, Seagoville,
+             Waxahachie, Cleburne, Terrell, Flower Mound, The Colony, Little Elm]
+    counties: [Dallas, Tarrant, Collin, Denton, Rockwall, Ellis, Johnson, Kaufman, Parker]
+    zip_prefixes: ["750", "751", "752", "753", "760", "761", "762"]
+    installations: ["NAS JRB Fort Worth", "Naval Air Station Joint Reserve Base Fort Worth",
+                    "Dallas VA", "VA North Texas", "DFW Airport"]
+  houston:
+    label: "Houston"
+    enabled: true
+    cities: [Houston, Pasadena, Pearland, Sugar Land, Baytown, League City, Katy, The Woodlands,
+             Conroe, Missouri City, Humble, Spring, Cypress, Tomball, Galveston, Texas City,
+             Friendswood, La Porte, Bellaire, Stafford, Channelview, Deer Park, Seabrook, Webster,
+             Kingwood, Richmond, Rosenberg]
+    counties: [Harris, Fort Bend, Montgomery, Brazoria, Galveston, Waller, Liberty, Chambers]
+    zip_prefixes: ["770", "772", "773", "774", "775"]
+    installations: ["Ellington Field", "Michael E. DeBakey VA", "Johnson Space Center", "Port of Houston"]
+  austin:
+    label: "Austin"
+    enabled: true
+    cities: [Austin, Round Rock, Cedar Park, Georgetown, Pflugerville, San Marcos, Leander, Kyle,
+             Buda, Bastrop, Lakeway, Hutto, Manor, Del Valle, Bee Cave, Taylor, Lockhart]
+    counties: [Travis, Williamson, Hays, Bastrop, Caldwell]
+    zip_prefixes: ["786", "787"]
+    installations: ["Camp Mabry", "Austin VA"]
+  san_antonio:
+    label: "San Antonio"
+    enabled: true
+    cities: [San Antonio, New Braunfels, Schertz, Converse, Universal City, Live Oak, Seguin,
+             Boerne, Helotes, Kirby, Leon Valley, Selma, Cibolo, Windcrest, Castle Hills]
+    counties: [Bexar, Comal, Guadalupe, Kendall, Medina, Wilson, Atascosa]
+    zip_prefixes: ["780", "781", "782"]
+    installations: ["JBSA", "Joint Base San Antonio", "Lackland", "Randolph", "Fort Sam Houston",
+                    "Camp Bullis", "Audie L. Murphy", "Brooke Army Medical Center", "BAMC"]
+
+# Opportunities that name "Texas", "statewide", or "various locations" without a city.
+statewide_terms: ["statewide", "state of texas", "various locations", "multiple locations", "texas-wide"]

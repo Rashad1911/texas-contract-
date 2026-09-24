@@ -1,0 +1,227 @@
+# Official procurement sources.
+#
+# Every portal below was confirmed on the entity's own official website (checked 2026-09-23).
+# `info_url` is the official page that points to the portal — if a portal ever moves, start there.
+#
+# type:
+#   sam       SAM.gov Get Opportunities API (federal; needs SAM_API_KEY)
+#   bonfire   Bonfire public portal (reads the public open-opportunities list)
+#   beacon    Beacon Bid public agency page
+#   html      A public listing page parsed for links/rows
+#   rss       An RSS feed filtered by title
+#   json_api  A JSON endpoint you paste in (see `api_url`) — used when a portal is a JavaScript app
+#   manual    Needs a login or can't be read automatically. Shown on the dashboard as "check by hand".
+#
+# listing_verified: false means the entity and portal are confirmed, but the exact listing URL/format
+# the code reads has not been tested from a live run yet. The first run's "Source health" section in
+# your email and dashboard tells you which sources worked. Fix a broken one by updating its url here.
+#
+# SOURCE PRIORITY (used when facts conflict):
+#   1 official solicitation  2 official award database  3 official procurement portal
+#   4 FAR / DFARS / SBA official text  5 reputable secondary sources (supplemental only)
+
+federal:
+  - key: sam
+    name: "SAM.gov — federal contract opportunities"
+    type: sam
+    market: all
+    jurisdiction: federal
+    enabled: true
+    url: "https://api.sam.gov/opportunities/v2/search"
+    info_url: "https://open.gsa.gov/api/get-opportunities-public-api/"
+    lookback_days: 10
+    notes: "Covers VA, DoD (Army, Air Force, Navy), GSA, DHS, USPS and all other federal agencies that post to SAM.gov."
+
+  - key: usaspending_idv
+    name: "USAspending.gov — active IDIQs and BPAs in Texas"
+    type: idv
+    market: all
+    jurisdiction: federal
+    enabled: true
+    url: "https://api.usaspending.gov/api/v2/search/spending_by_award/"
+    info_url: "https://www.usaspending.gov/search"
+    notes: "Existing contract vehicles for your NAICS codes (settings.yaml → vehicles.idv_naics): who holds them (teaming leads) and which stop taking orders soon (recompete watch). Free, no key."
+
+award_sources:
+  - key: usaspending
+    name: "USAspending.gov — federal award history"
+    url: "https://api.usaspending.gov/api/v2/search/spending_by_award/"
+    info_url: "https://api.usaspending.gov/"
+    notes: "Free, no key. Used by the Prior Winner agent."
+  - key: fpds_reference
+    name: "SAM.gov Contract Data (FPDS) — manual lookups"
+    url: "https://sam.gov/search/?index=cd"
+    notes: "Official contract award records; link included in reports for manual verification."
+
+regulations:
+  far: "https://www.acquisition.gov/browse/index/far"
+  dfars: "https://www.acquisition.gov/dfars"
+  far_52_219_14: "https://www.acquisition.gov/far/52.219-14"
+  far_19_505: "https://www.acquisition.gov/far/19.505"
+  far_16_505: "https://www.acquisition.gov/far/16.505"      # task orders: fair opportunity among holders
+  sba_size_standards: "https://www.sba.gov/federal-contracting/contracting-guide/size-standards"
+  sba_contracting: "https://www.sba.gov/federal-contracting"
+  texas_hub_program: "https://comptroller.texas.gov/purchasing/vendor/hub/"
+  texas_procurement_manual: "https://comptroller.texas.gov/purchasing/"
+
+local:
+  # ── Dallas / Fort Worth ─────────────────────────────────────────────
+  - key: dallas_city
+    name: "City of Dallas — Office of Procurement Services"
+    type: bonfire
+    market: dfw
+    jurisdiction: city
+    enabled: true
+    url: "https://dallascityhall.bonfirehub.com/portal/?tab=openOpportunities"
+    info_url: "https://dallascityhall.com/departments/procurement"
+    awards_url: "https://dallascityhall.bonfirehub.com/portal/?tab=pastOpportunities"
+    listing_verified: false
+    notes: "City uses Bonfire. Must be registered with the Texas Secretary of State to be considered for award. Publishes a quarterly forecast of upcoming solicitations (with estimated values and subcontracting opportunities) on the procurement page."
+
+  - key: dallas_county
+    name: "Dallas County — Purchasing Department"
+    type: html
+    market: dfw
+    jurisdiction: county
+    enabled: true
+    url: "https://www.dallascounty.org/departments/purchasing/current-business-ops.php"
+    info_url: "https://www.dallascounty.org/departments/purchasing/currentbids.php"
+    submit_url: "https://www.bidnetdirect.com/texas/dallas-county"
+    awards_url: "https://www.dallascounty.org/departments/purchasing/"
+    listing_verified: false
+    notes: "View-only public list of formal solicitations; responses go through BidNet Direct (since Dec 2024). Bid tabulations by year are on the purchasing site."
+
+  - key: fort_worth_city
+    name: "City of Fort Worth — Purchasing"
+    type: bonfire
+    market: dfw
+    jurisdiction: city
+    enabled: true
+    url: "https://fortworthtexas.bonfirehub.com/portal/?tab=openOpportunities"
+    info_url: "https://www.fortworthtexas.gov/departments/finance/purchasing/bids-current"
+    awards_url: "https://fortworthtexas.bonfirehub.com/portal/?tab=pastOpportunities"
+    listing_verified: false
+    notes: "All solicitations since Jan 1, 2024 are on Bonfire. Also requires PeopleSoft supplier registration to get paid."
+
+  # ── Houston ─────────────────────────────────────────────────────────
+  - key: houston_city
+    name: "City of Houston — Strategic Procurement Division"
+    type: beacon
+    market: houston
+    jurisdiction: city
+    enabled: true
+    url: "https://www.beaconbid.com/solicitations/city-of-houston/open"
+    info_url: "https://purchasing.houstontx.gov"
+    listing_verified: false
+    notes: "City uses Beacon Bid. Suppliers must also register through SAP Business Network. Many contracts carry M/WBE goals; Hire Houston First applies to some."
+
+  - key: harris_county
+    name: "Harris County — Office of the Purchasing Agent"
+    type: bonfire
+    market: houston
+    jurisdiction: county
+    enabled: true
+    url: "https://harriscountytx.bonfirehub.com/portal/?tab=openOpportunities"
+    info_url: "https://purchasing.harriscountytx.gov"
+    awards_url: "https://harriscountytx.bonfirehub.com/portal/?tab=pastOpportunities"
+    listing_verified: false
+    notes: "County (and Harris Health) solicitations are on Bonfire."
+
+  # ── Austin ──────────────────────────────────────────────────────────
+  - key: austin_city
+    name: "City of Austin — Financial Services / Purchasing"
+    type: html
+    market: austin
+    jurisdiction: city
+    enabled: true
+    url: "https://financeonline.austintexas.gov/afo/account_services/solicitation/solicitations.cfm"
+    info_url: "https://financeonline.austintexas.gov/"
+    awards_url: "https://financeonline.austintexas.gov/"
+    link_pattern: "solicitation_details\\.cfm"
+    listing_verified: false
+    notes: "Austin Finance Online lists active and closed solicitations, bid tabs, and expiring contracts (useful for spotting rebids early)."
+
+  - key: travis_county
+    name: "Travis County — Purchasing Office"
+    type: manual
+    market: austin
+    jurisdiction: county
+    enabled: true
+    url: "https://www.traviscountytx.gov/purchasing/solicitation"
+    info_url: "https://www.traviscountytx.gov/purchasing/doing-business"
+    awards_url: "https://purchasingtransparency.traviscountytx.gov/public/search/solicitations"
+    notes: "Solicitations are on BidNet (registration required to view). The transparency portal has bid tabulations; the county also publishes a forecasted purchases list."
+
+  # ── San Antonio ─────────────────────────────────────────────────────
+  - key: san_antonio_city
+    name: "City of San Antonio — Finance Department, Procurement Division"
+    type: html
+    market: san_antonio
+    jurisdiction: city
+    enabled: true
+    url: "https://www.sa.gov/Directory/Departments/Finance/About/Divisions/Procurement/Bidding-Contracting"
+    info_url: "https://www.sa.gov/procurement"
+    submit_url: "https://supplierservice.sanantonio.gov/irj/portal"
+    awards_url: "https://www.sa.gov/Directory/Departments/Finance/About/Divisions/Procurement/Bidding-Contracting"
+    listing_verified: false
+    notes: "Goods and services go through SAePS (login required); construction through CIVCAST. The public Bidding & Contracting page links to current opportunities, anticipated solicitations, intent-to-award, and tabulations. If this source reports 0 items, open the page, click 'Bidding & Contract Opportunities', and paste that URL here."
+
+  - key: bexar_county
+    name: "Bexar County — Purchasing Department"
+    type: rss
+    market: san_antonio
+    jurisdiction: county
+    enabled: true
+    url: "https://www.bexar.org/RSSFeed.aspx?ModID=58&CID=All-calendar.xml"
+    title_filter: "bid alert"
+    info_url: "https://www.bexar.org/purchasing"
+    listing_verified: false
+    notes: "Bexar County posts 'Bid Alert! Event #…' entries on its official calendar. The RSS URL follows the site's standard feed pattern — confirm it via 'View RSS Feeds' on bexar.org/Calendar.aspx. Responses go through the Bexar County Supplier Portal."
+
+  # ── Texas statewide ─────────────────────────────────────────────────
+  # ── Texas purchasing cooperatives (local governments' version of an IDIQ) ─────────
+  # One award lets school districts, cities, and counties across Texas buy from you without their own bid.
+  - key: buyboard
+    name: "BuyBoard Purchasing Cooperative (TASB / TML / TAC)"
+    type: html
+    market: statewide
+    jurisdiction: cooperative
+    enabled: true
+    url: "https://www.buyboard.com/vendor/proposal-invitations"
+    info_url: "https://www.buyboard.com/vendor/resources"
+    submit_url: "https://www.buyboard.com/vendor"
+    awards_url: "https://www.buyboard.com/vendor/resources"
+    listing_verified: false
+    notes: "Statewide co-op for school districts, cities, and counties. Current and upcoming proposal invitations are listed publicly; responses need a free vendor registration. Proposal tabulations are on the resources page."
+
+  - key: tips
+    name: "TIPS — The Interlocal Purchasing System (Region 8 ESC)"
+    type: manual
+    market: statewide
+    jurisdiction: cooperative
+    enabled: true
+    url: "https://www.tips-usa.com/faq.cfm"
+    info_url: "https://www.tips-usa.com/leadagency.cfm"
+    notes: "National co-op led by Texas Region 8 ESC. Its vendor contracts are IDIQ solicitations. Register as a vendor to receive solicitation notices; check by hand."
+
+  - key: choice_partners
+    name: "Choice Partners Cooperative (Harris County Dept. of Education)"
+    type: manual
+    market: statewide
+    jurisdiction: cooperative
+    enabled: true
+    url: "https://www.choicepartners.org/"
+    info_url: "https://www.choicepartners.org/all-in-one-cooperative"
+    notes: "Houston-based co-op with facility-services contracts (janitorial vendors already sell through it). Register as a vendor to receive solicitation notices; check by hand."
+
+  - key: texas_esbd
+    name: "Texas Electronic State Business Daily (ESBD)"
+    type: json_api
+    market: statewide
+    jurisdiction: state
+    enabled: true
+    url: "https://www.txsmartbuy.gov/esbd"
+    api_url: ""        # one-time setup — see README §6 "Turning on the ESBD feed"
+    api_method: GET
+    info_url: "https://comptroller.texas.gov/purchasing/"
+    notes: "State agencies must post solicitations over $25,000 here; many local governments also use it. No login needed to view."

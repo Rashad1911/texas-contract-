@@ -1,0 +1,122 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Texas Government Contract Opportunity Agent — main settings
+# Secrets (API keys, email password) NEVER go in this file. They come from
+# environment variables / GitHub Secrets. See .env.example.
+# ─────────────────────────────────────────────────────────────────────────────
+
+company:
+  # Your existing LLC. Change these if you bid under a different entity.
+  legal_name: "Deyampert & Patterson Enterprises LLC"
+  dba: "D&P Cleaning"
+  website: "https://cleaningdp.com"
+  contact_name: "Rashad Deyampert"
+  signature_name: "Rashad"         # how drafted emails are signed
+  phone: ""                        # optional — used in drafted emails / capability statement
+  email: ""
+  home_market: dfw                 # dfw | houston | austin | san_antonio
+  # Fill these in as you get them. Do NOT put your EIN, SSN, or bank info here —
+  # this repository (and the dashboard) may be public.
+  uei: ""                          # from SAM.gov entity registration
+  cage_code: ""
+  sam_registered: false            # set true once your SAM.gov entity registration is active
+  small_business: true
+  years_in_business: 1
+  # Only list certifications you actually hold. Used to reject set-asides you can't bid on.
+  # Options: HUB, SBE, MBE, WBE, DBE, 8A, HUBZONE, SDVOSB, VOSB, WOSB, EDWOSB
+  certifications: []
+  # Contract vehicles you hold (e.g. "GSA MAS", a BPA number). Task orders under any OTHER vehicle are
+  # filtered out with an explanation, because only that vehicle's holders can respond.
+  vehicles_held: []
+  existing_capabilities:           # categories from services.yaml you can point to as past performance
+    - janitorial
+    - post_construction_cleaning
+  bonding_capacity: 0              # dollars of surety bonding you can get today (0 = none yet)
+  insurance_on_hand:
+    general_liability: 0           # per-occurrence limit you carry today
+    auto_liability: 0
+    workers_comp: false
+
+schedule:
+  run_every_days: 3                # full search cadence; the workflow checks daily and skips until due
+  timezone: "America/Chicago"
+
+sam:
+  # Roleless SAM.gov keys get 10 requests/day. Once your LLC's SAM.gov entity
+  # registration is active and your user has a role on it, the limit is 1,000/day —
+  # then set daily_request_limit: 1000 and query_mode: all.
+  daily_request_limit: 10
+  reserve_requests: 2              # leave a couple for manual runs
+  query_mode: auto                 # state | all | auto (auto = "all" when the limit is 100+)
+  notice_types: "o,k,p,r"          # o=solicitation k=combined synopsis p=presolicitation r=sources sought
+
+limits:
+  max_deep_reviews: 12             # survivors that get full multi-agent analysis each run
+  max_attachments_per_opp: 3
+  max_attachment_mb: 8
+  top_in_email: 5
+  review_in_email: 3
+
+filter:
+  min_days_to_deadline: 4          # anything closing sooner is marked "not enough time"
+  min_contract_value: 25000        # applied only when a value is known
+  include_statewide: true          # keep Texas-wide / multi-site opportunities
+  include_supply_contracts: false  # goods-only purchases (e.g. "janitorial supplies")
+  include_unknown_location: true   # SAM notices with no place of performance listed
+
+scoring:
+  # Each factor scores 0–10; weights set how much it matters. Total is scaled to 0–100.
+  weights:
+    startup_difficulty: 1.2
+    capital_required: 1.0
+    outsourcing_potential: 1.6
+    contract_value: 1.0
+    competition: 0.8
+    experience_requirements: 0.9
+    licensing_requirements: 0.8
+    insurance_requirements: 0.6
+    bonding: 0.8
+    time_to_deadline: 0.9
+    geographic_fit: 0.7
+    complexity: 0.6
+    margin_potential: 0.7
+    past_award_info: 0.3
+    small_llc_realism: 1.2
+  thresholds:                      # a Top Opportunity also needs: ≤1 major risk, the real solicitation text,
+    top: 72                        # 5+ days to prepare, and subcontracting confirmed (unless it's work you do yourself)
+    review: 55
+    watch: 42
+
+vehicles:                          # IDIQs, MATOCs, BPAs, task orders, term contracts, co-ops (README §11)
+  enabled: true
+  track_sam_awards: true           # SAM.gov award notices for IDIQs/BPAs in Texas → teaming leads (no extra requests)
+  sam_naics_queries: ["561720", "561730", "561790"]   # nationwide searches, kept only when Texas is involved
+  keep_sam_requests_for_details: 5 # extra searches never eat into reading full solicitation text
+  idv_scan: true                   # USAspending: active IDIQs/BPAs in Texas (free) → holders + recompete watch
+  idv_naics: ["561720", "561730", "561790", "561710", "562111"]
+  recompete_window_months: 18
+  max_recompete_items: 8
+
+discovery:
+  enabled: true
+  auto_add: true                   # add discovered service lines to next run's search (data/discovered_services.yaml)
+  min_occurrences: 2               # a new service phrase must show up this many times before it's added
+
+email:
+  subject_prefix: "Texas Government Contract Report"
+  send_when_empty: false           # false = no email when nothing meaningful was found
+
+site:
+  title: "Texas Contract Scout"
+  include_filtered: true           # show filtered-out items on the dashboard (with reasons)
+  show_decisions: true             # show your PURSUE / WATCH / PASS stamps to anyone who opens the dashboard
+  include_drafts: true             # show proposal drafts (capability statement, CO questions…) on the dashboard
+  allow_search_engines: false      # false = ask search engines not to index the dashboard
+  url: ""                          # your dashboard link; blank = https://<you>.github.io/<repo>/ inside GitHub Actions
+  repo: ""                         # "owner/repo" — only needed when running outside GitHub Actions
+
+llm:
+  provider: auto                   # auto | openai | anthropic | none
+  openai_model: "gpt-4.1-mini"     # change to any current OpenAI model name
+  anthropic_model: "claude-sonnet-5"
+  max_calls_per_run: 60
+  max_chars_per_document: 30000
