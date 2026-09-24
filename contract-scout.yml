@@ -1,0 +1,86 @@
+# Runs the Texas Government Contract Opportunity Agent.
+#  - Checks daily; the app itself only does a full search every 3 days and skips quietly in between.
+#  - "Run workflow" on the Actions tab runs a full search right now.
+#  - The code lives in the texas-gov-contract-agent/ subfolder, so every step runs there.
+#  - The dashboard (texas-gov-contract-agent/docs) is published to GitHub Pages after each run.
+name: Contract Scout
+
+on:
+  schedule:
+    - cron: "0 11 * * *"      # 11:00 UTC = 6 AM CDT / 5 AM CST
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Run a full search now, even if one ran recently"
+        type: boolean
+        default: true
+      send_email:
+        description: "Send the email report"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: contract-data
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: texas-gov-contract-agent
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      SAM_API_KEY: ${{ secrets.SAM_API }}
+      EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
+      EMAIL_PASSWORD: ${{ secrets.E_MAIL }}
+      EMAIL_TO: ${{ secrets.EMAIL_TO }}
+      FORCE: ${{ github.event_name == 'workflow_dispatch' && inputs.force }}
+      SEND_EMAIL: ${{ github.event_name != 'workflow_dispatch' || inputs.send_email }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Run the agent
+        run: |
+          ARGS=""
+          if [ "$FORCE" = "true" ]; then ARGS="$ARGS --force"; fi
+          if [ "$SEND_EMAIL" != "true" ]; then ARGS="$ARGS --no-email"; fi
+          python main.py run $ARGS
+
+      - name: Save results to the repository
+        run: |
+          git config user.name "contract-scout-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/
+          if git diff --cached --quiet; then
+            echo "Nothing new to save."
+          else
+            git commit -m "Contract report $(date -u +%Y-%m-%d)"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - name: Upload dashboard for Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: texas-gov-contract-agent/docs
+
+      - name: Deploy dashboard to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
