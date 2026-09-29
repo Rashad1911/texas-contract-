@@ -1,0 +1,126 @@
+# Records PURSUE / WATCH / PASS decisions.
+#  - From the dashboard (owner mode): the buttons open a pre-filled issue titled like "PURSUE TX-1A2B3C".
+#    Only issues opened by the repository owner are processed.
+#  - From the Actions tab: "Run workflow" and fill in the form.
+# Each run also sweeps up any other open decision issues, so none are lost when several are
+# submitted close together. The dashboard is rebuilt and republished, and each issue is closed.
+name: Record decision
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+    inputs:
+      opportunity:
+        description: "Opportunity code from the email or dashboard (TX-1A2B3C)"
+        required: true
+      decision:
+        description: "Decision"
+        type: choice
+        options: [PURSUE, WATCH, PASS]
+        required: true
+      reason:
+        description: "Reason (optional)"
+        required: false
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: contract-data
+  cancel-in-progress: false
+
+defaults:
+  run:
+    working-directory: texas-gov-contract-agent
+
+jobs:
+  record:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.issue.user.login == github.repository_owner &&
+       (startsWith(github.event.issue.title, 'PURSUE ') ||
+        startsWith(github.event.issue.title, 'WATCH ') ||
+        startsWith(github.event.issue.title, 'PASS ')))
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+      OWNER: ${{ github.repository_owner }}
+      IN_OPPORTUNITY: ${{ inputs.opportunity }}
+      IN_DECISION: ${{ inputs.decision }}
+      IN_REASON: ${{ inputs.reason }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Record decisions
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            python main.py mark "$IN_OPPORTUNITY" "$IN_DECISION" --reason "$IN_REASON"
+          fi
+          gh issue list --repo "$GITHUB_REPOSITORY" --state open --author "$OWNER" --limit 50 \
+            --json number,title,body > "$RUNNER_TEMP/issues.json"
+          : > "$RUNNER_TEMP/done.txt"
+          : > "$RUNNER_TEMP/failed.txt"
+          jq -c '.[]' "$RUNNER_TEMP/issues.json" | while read -r row; do
+            num=$(jq -r '.number' <<< "$row")
+            title=$(jq -r '.title' <<< "$row")
+            case "$title" in
+              "PURSUE "*|"WATCH "*|"PASS "*) ;;
+              *) continue ;;
+            esac
+            body=$(jq -r '.body // ""' <<< "$row")
+            if ISSUE_NUMBER="$num" ISSUE_TITLE="$title" ISSUE_BODY="$body" python main.py decide-from-issue; then
+              echo "$num" >> "$RUNNER_TEMP/done.txt"
+            else
+              echo "$num" >> "$RUNNER_TEMP/failed.txt"
+            fi
+          done
+
+      - name: Save
+        id: save
+        run: |
+          git config user.name "contract-scout-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/
+          if ! git diff --cached --quiet; then
+            git commit -m "Decision recorded"
+            git pull --rebase --autostash
+            git push
+          fi
+
+      - name: Upload dashboard for Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: texas-gov-contract-agent/docs
+
+      - name: Deploy dashboard to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Close the issues
+        if: always()
+        run: |
+          if [ "${{ steps.save.outcome }}" = "success" ] && [ -s "$RUNNER_TEMP/done.txt" ]; then
+            while read -r num; do
+              gh issue close "$num" --repo "$GITHUB_REPOSITORY" --comment "Recorded. The dashboard refreshes in a minute or two."
+            done < "$RUNNER_TEMP/done.txt"
+          fi
+          if [ -s "$RUNNER_TEMP/failed.txt" ]; then
+            while read -r num; do
+              gh issue close "$num" --repo "$GITHUB_REPOSITORY" --reason "not planned" --comment "Couldn't record this. Check the code (TX-XXXXXX) and the title format, e.g. PURSUE TX-1A2B3C, then open a new one."
+            done < "$RUNNER_TEMP/failed.txt"
+          fi
