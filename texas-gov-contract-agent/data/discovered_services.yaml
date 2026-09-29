@@ -1,0 +1,190 @@
+# Service categories the Discovery agent found. approved: true = searched on the next run.
+# Set approved: false (and rejected: true) to switch one off, or copy it into config/services.yaml.
+categories:
+  supplemental_professional:
+    label: Supplemental Professional
+    keywords:
+    - supplemental professional
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified supplemental professional provider
+    related: []
+    first_seen: '2026-09-29'
+    times_seen: 6
+    examples:
+    - RFSQ - Additional Supplemental Professional Land Surveying Services for Various
+      Projects for the Harris County Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Design Services
+      for Various Facility Projects for the Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Drainage
+      Projects for Harris County Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Parks,
+      Trails, and Recreational Projects for Harris County Office of the County Engineer
+    - RFSQ- Additional Supplemental Professional Geotechnical Engineering Services
+      for Various Projects for Harris County Office of the County Engineer
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - RFSQ - Additional Supplemental Professional Land Surveying Services for Various
+      Projects for the Harris County Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Design Services
+      for Various Facility Projects for the Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Drainage
+      Projects for Harris County Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Parks,
+      Trails, and Recreational Projects for Harris County Office of the County Engineer
+    - RFSQ- Additional Supplemental Professional Geotechnical Engineering Services
+      for Various Projects for Harris County Office of the County Engineer
+    - RSFQ - Additional Supplemental Professional Architectural and/or Engineering
+      Services to Provide Construction Materials Engineering and Testing Services
+      for Various Projects for the Office of the County Engineer
+    last_seen: '2026-09-29'
+  flood_control:
+    label: Flood Control
+    keywords:
+    - flood control
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified flood control provider
+    related: []
+    first_seen: '2026-09-29'
+    times_seen: 4
+    examples:
+    - ITB - Maintenance of Wetland Habitat and Other Sensitive Areas for the Harris
+      County Flood Control District
+    - ITB - Property Boundary Vegetation Removal, Pruning and Related items for the
+      Harris County Flood Control District
+    - ITB - Remodeling of the Michael Talbott Service Center (Maintenance Construction
+      Group) Building for the Harris County Flood Control District
+    - RFP - On-Call Environmental Consulting Services for the Harris County Flood
+      Control District (Grant Funded)
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - ITB - Maintenance of Wetland Habitat and Other Sensitive Areas for the Harris
+      County Flood Control District
+    - ITB - Property Boundary Vegetation Removal, Pruning and Related items for the
+      Harris County Flood Control District
+    - ITB - Remodeling of the Michael Talbott Service Center (Maintenance Construction
+      Group) Building for the Harris County Flood Control District
+    - RFP - On-Call Environmental Consulting Services for the Harris County Flood
+      Control District (Grant Funded)
+    last_seen: '2026-09-29'
+  control_district:
+    label: Control District
+    keywords:
+    - control district
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified control district provider
+    related: []
+    first_seen: '2026-09-29'
+    times_seen: 4
+    examples:
+    - ITB - Maintenance of Wetland Habitat and Other Sensitive Areas for the Harris
+      County Flood Control District
+    - ITB - Property Boundary Vegetation Removal, Pruning and Related items for the
+      Harris County Flood Control District
+    - ITB - Remodeling of the Michael Talbott Service Center (Maintenance Construction
+      Group) Building for the Harris County Flood Control District
+    - RFP - On-Call Environmental Consulting Services for the Harris County Flood
+      Control District (Grant Funded)
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - ITB - Maintenance of Wetland Habitat and Other Sensitive Areas for the Harris
+      County Flood Control District
+    - ITB - Property Boundary Vegetation Removal, Pruning and Related items for the
+      Harris County Flood Control District
+    - ITB - Remodeling of the Michael Talbott Service Center (Maintenance Construction
+      Group) Building for the Harris County Flood Control District
+    - RFP - On-Call Environmental Consulting Services for the Harris County Flood
+      Control District (Grant Funded)
+    last_seen: '2026-09-29'
+  professional_architectural:
+    label: Professional Architectural
+    keywords:
+    - professional architectural
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified professional architectural provider
+    related: []
+    first_seen: '2026-09-29'
+    times_seen: 4
+    examples:
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Design Services
+      for Various Facility Projects for the Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Drainage
+      Projects for Harris County Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Parks,
+      Trails, and Recreational Projects for Harris County Office of the County Engineer
+    - RSFQ - Additional Supplemental Professional Architectural and/or Engineering
+      Services to Provide Construction Materials Engineering and Testing Services
+      for Various Projects for the Office of the County Engineer
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Design Services
+      for Various Facility Projects for the Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Drainage
+      Projects for Harris County Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Parks,
+      Trails, and Recreational Projects for Harris County Office of the County Engineer
+    - RSFQ - Additional Supplemental Professional Architectural and/or Engineering
+      Services to Provide Construction Materials Engineering and Testing Services
+      for Various Projects for the Office of the County Engineer
+    last_seen: '2026-09-29'
+  rfsq_supplemental:
+    label: Rfsq Supplemental
+    keywords:
+    - rfsq supplemental
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified rfsq supplemental provider
+    related: []
+    first_seen: '2026-09-29'
+    times_seen: 3
+    examples:
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Design Services
+      for Various Facility Projects for the Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Drainage
+      Projects for Harris County Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Parks,
+      Trails, and Recreational Projects for Harris County Office of the County Engineer
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Design Services
+      for Various Facility Projects for the Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Drainage
+      Projects for Harris County Office of the County Engineer
+    - RFSQ - Supplemental Professional Architectural and/or Engineering Services to
+      Provide Design Services for the Development and Implementation of Various Parks,
+      Trails, and Recreational Projects for Harris County Office of the County Engineer
+    last_seen: '2026-09-29'
