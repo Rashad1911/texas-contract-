@@ -1,6 +1,7 @@
 # Runs the Texas Government Contract Opportunity Agent.
 #  - Checks daily; the app itself only does a full search every 3 days and skips quietly in between.
 #  - "Run workflow" on the Actions tab runs a full search right now.
+#  - A file at texas-gov-contract-agent/data/catch_up_days (e.g. "60") makes the next run a one-time deeper SAM.gov search.
 #  - The code lives in the texas-gov-contract-agent/ subfolder, so every step runs there.
 #  - The dashboard (texas-gov-contract-agent/docs) is published to GitHub Pages after each run.
 name: Contract Scout
@@ -59,9 +60,27 @@ jobs:
       - name: Run the agent
         run: |
           ARGS=""
+          # One-time catch-up: if data/catch_up_days exists (e.g. "60"), this run searches SAM.gov that many
+          # days back using the full daily request budget, then deletes the file once SAM.gov reads cleanly.
+          CATCH_UP=""
+          if [ -f data/catch_up_days ]; then CATCH_UP=$(tr -dc '0-9' < data/catch_up_days); fi
+          if [ -n "$CATCH_UP" ]; then
+            echo "One-time catch-up: searching SAM.gov notices from the last $CATCH_UP days."
+            sed -i -E "s/^( *lookback_days: *)[0-9]+/\1$CATCH_UP/" config/sources.yaml
+            sed -i -E "s/^( *reserve_requests: *)[0-9]+/\10/" config/settings.yaml
+            FORCE=true
+          fi
           if [ "$FORCE" = "true" ]; then ARGS="$ARGS --force"; fi
           if [ "$SEND_EMAIL" != "true" ]; then ARGS="$ARGS --no-email"; fi
           python main.py run $ARGS
+          if [ -n "$CATCH_UP" ]; then
+            if python -c "import json,sys; d=json.load(open('docs/data.json')); sys.exit(0 if any(s.get('key')=='sam' and s.get('status')=='ok' for s in d.get('sources',[])) else 1)"; then
+              rm -f data/catch_up_days
+              echo "Catch-up finished; next run goes back to the normal window."
+            else
+              echo "SAM.gov did not read cleanly; keeping the catch-up for the next run."
+            fi
+          fi
 
       - name: Save results to the repository
         run: |
