@@ -188,3 +188,73 @@ categories:
       Provide Design Services for the Development and Implementation of Various Parks,
       Trails, and Recreational Projects for Harris County Office of the County Engineer
     last_seen: '2026-09-29'
+  athletic_trainer:
+    label: Athletic Trainer
+    keywords:
+    - athletic trainer
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified athletic trainer provider
+    related: []
+    first_seen: '2026-09-30'
+    times_seen: 2
+    examples:
+    - Athletic Trainer (AT) Support Personal Services - Korea/Guam
+    - Athletic Trainer (AT) Support personal services - Europe
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - Athletic Trainer (AT) Support Personal Services - Korea/Guam
+    - Athletic Trainer (AT) Support personal services - Europe
+    last_seen: '2026-09-30'
+  sources_sought:
+    label: Sources Sought
+    keywords:
+    - sources sought
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified sources sought provider
+    related: []
+    first_seen: '2026-09-30'
+    times_seen: 2
+    examples:
+    - Operations, Research, and Broad Innovative Technology Services (ORBIT) Request
+      for Information (RFI) and Sources Sought Notice (SSN)
+    - Q531--On-Site Inpatient Hemodialysis Services Sources Sought Notice
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - Operations, Research, and Broad Innovative Technology Services (ORBIT) Request
+      for Information (RFI) and Sources Sought Notice (SSN)
+    - Q531--On-Site Inpatient Hemodialysis Services Sources Sought Notice
+    last_seen: '2026-09-30'
+  sought_notice:
+    label: Sought Notice
+    keywords:
+    - sought notice
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified sought notice provider
+    related: []
+    first_seen: '2026-09-30'
+    times_seen: 2
+    examples:
+    - Operations, Research, and Broad Innovative Technology Services (ORBIT) Request
+      for Information (RFI) and Sources Sought Notice (SSN)
+    - Q531--On-Site Inpatient Hemodialysis Services Sources Sought Notice
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - Operations, Research, and Broad Innovative Technology Services (ORBIT) Request
+      for Information (RFI) and Sources Sought Notice (SSN)
+    - Q531--On-Site Inpatient Hemodialysis Services Sources Sought Notice
+    last_seen: '2026-09-30'
