@@ -258,3 +258,69 @@ categories:
       for Information (RFI) and Sources Sought Notice (SSN)
     - Q531--On-Site Inpatient Hemodialysis Services Sources Sought Notice
     last_seen: '2026-09-30'
+  fire_extinguisher:
+    label: Fire extinguisher & safety inspections
+    keywords:
+    - fire extinguisher
+    - fire alarm inspection
+    - sprinkler inspection
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses:
+    - Texas State Fire Marshal license
+    subcontractor: Qualified fire extinguisher & safety inspections provider
+    related: []
+    first_seen: '2026-10-03'
+    times_seen: 1
+    examples:
+    - H342--CTX Annual Fire Extinguisher Inspection
+    approved: false
+    source: known adjacent line
+    seen_titles:
+    - H342--CTX Annual Fire Extinguisher Inspection
+    last_seen: '2026-10-03'
+  elevator:
+    label: Elevator maintenance
+    keywords:
+    - elevator
+    naics: []
+    startup: high
+    outsource: low
+    margin: medium
+    licenses:
+    - TDLR elevator contractor
+    subcontractor: Qualified elevator maintenance provider
+    related: []
+    first_seen: '2026-10-03'
+    times_seen: 1
+    examples:
+    - J036--NTX Elevator Inspection | BASE + OPTIONS | 549 | NEED DATE 12.2026
+    approved: false
+    source: known adjacent line
+    seen_titles:
+    - J036--NTX Elevator Inspection | BASE + OPTIONS | 549 | NEED DATE 12.2026
+    last_seen: '2026-10-03'
+  need_date:
+    label: Need Date
+    keywords:
+    - need date
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified need date provider
+    related: []
+    first_seen: '2026-10-03'
+    times_seen: 2
+    examples:
+    - J036--NTX Elevator Inspection | BASE + OPTIONS | 549 | NEED DATE 12.2026
+    - Z2FE--CTX Chapel Window Repair/Replacement | NEED DATE
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - J036--NTX Elevator Inspection | BASE + OPTIONS | 549 | NEED DATE 12.2026
+    - Z2FE--CTX Chapel Window Repair/Replacement | NEED DATE
+    last_seen: '2026-10-03'
