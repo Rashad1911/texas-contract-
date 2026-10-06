@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-03T09:58:01.289189-05:00",
+ "generated_at": "2026-10-06T11:58:10.475255-05:00",
  "leads": [
   {
    "holder": "ABBOTT LABORATORIES INC.",
@@ -93,19 +93,6 @@
    "source": "SAM.gov award notice"
   },
   {
-   "holder": "LMI INC",
-   "title": "Somerville Lake Mowing Services, Capital Region, Texas",
-   "vehicle": "Contract award",
-   "agency": "Dept Of Defense",
-   "naics": "561730",
-   "amount": 965037.75,
-   "award_date": "2026-09-23",
-   "contract_number": "W9126G26PA082",
-   "city": "",
-   "url": "https://sam.gov/workspace/contract/opp/9f7bc2d991674553be2b6de4d285c10a/view",
-   "source": "SAM.gov award notice"
-  },
-  {
    "holder": "C-A NATIVE CONSTRUCTORS INC",
    "title": "W9126G26RA108",
    "vehicle": "Contract award",
@@ -145,45 +132,6 @@
    "source": "SAM.gov award notice"
   },
   {
-   "holder": "ICOSAGON LLC",
-   "title": "Replacement of 6P1 & 6P2 Unwater & Drainage Sump Pump, & Wore Out Parts",
-   "vehicle": "Contract award",
-   "agency": "International Boundary And Water Commission: Us-Mexico",
-   "naics": "238220",
-   "amount": 225000.0,
-   "award_date": "2026-09-24",
-   "contract_number": "191BWC26P0086",
-   "city": "",
-   "url": "https://sam.gov/workspace/contract/opp/3c9ea3c840ba48518a35480b6cdafe3d/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "Cloud Quantum Innovations LLC",
-   "title": "37 TRSS Combat Weapons Flight Laundry and Dry-cleaning Services",
-   "vehicle": "Contract award",
-   "agency": "Dept Of Defense",
-   "naics": "812320",
-   "amount": 188016.0,
-   "award_date": "2026-09-24",
-   "contract_number": "FA301626P0199",
-   "city": "0",
-   "url": "https://sam.gov/workspace/contract/opp/63f70e144da6469291f083d66fc02875/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "SPRING FOUNTAIN STUDIOS LLC",
-   "title": "Water Recycling Systems Maintenance",
-   "vehicle": "Contract award",
-   "agency": "Dept Of Defense",
-   "naics": "561210",
-   "amount": 187500.0,
-   "award_date": "2026-09-23",
-   "contract_number": "FA301626P0162",
-   "city": "0",
-   "url": "https://sam.gov/workspace/contract/opp/a875b37ba0b345bb9d289b940f535925/view",
-   "source": "SAM.gov award notice"
-  },
-  {
    "holder": "M&J Empire Solutions, LLC",
    "title": "Bldg 3820 Chiller Diagnostic and VFD Services",
    "vehicle": "Contract award",
@@ -198,19 +146,6 @@
   },
   {
    "holder": "WILLIAMS DIVERSIFIED LLC",
-   "title": "FY26 Installation of New 3-Phase Primary Underground Electrical Service Ellington Field, TX",
-   "vehicle": "Contract award",
-   "agency": "Dept Of Defense",
-   "naics": "238210",
-   "amount": 47493.24,
-   "award_date": "2026-09-22",
-   "contract_number": "W50S77-26-P-A007",
-   "city": "Houston",
-   "url": "https://sam.gov/workspace/contract/opp/dbf6c2c2627f4736b65faee704efa237/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "WILLIAMS DIVERSIFIED LLC",
    "title": "Reynosa IT Wiring",
    "vehicle": "Contract award",
    "agency": "Agriculture, Department Of",
@@ -220,19 +155,6 @@
    "contract_number": "12639526P0296",
    "city": "Reynosa",
    "url": "https://sam.gov/workspace/contract/opp/533c4d11cd6e42f4bfa10da627cc240f/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "Crosscut Tree Works LLC",
-   "title": "Cattle Egret Habitat Removal Property B",
-   "vehicle": "Contract award",
-   "agency": "Dept Of Defense",
-   "naics": "561730",
-   "amount": 20000.0,
-   "award_date": "2026-09-22",
-   "contract_number": "FA302026P0128",
-   "city": "0",
-   "url": "https://sam.gov/workspace/contract/opp/3f4f21afc00f4178907df419ed9468b1/view",
    "source": "SAM.gov award notice"
   }
  ]
