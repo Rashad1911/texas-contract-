@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-06T11:58:10.475255-05:00",
+ "generated_at": "2026-10-09T12:13:30.960525-05:00",
  "leads": [
   {
    "holder": "ABBOTT LABORATORIES INC.",
@@ -12,6 +12,19 @@
    "contract_number": "36C25727A0004",
    "city": "",
    "url": "https://sam.gov/workspace/contract/opp/d620f57854b748918618579f06dbabc8/view",
+   "source": "SAM.gov award notice"
+  },
+  {
+   "holder": "BRADSHER, JAMES E",
+   "title": "V999--WHEELCHAIR 3 MONTH BRIDGE IDC CONTRACT",
+   "vehicle": "Contract award",
+   "agency": "Veterans Affairs, Department Of",
+   "naics": "485991",
+   "amount": 4939250.0,
+   "award_date": "2026-09-28",
+   "contract_number": "36C25726D0098",
+   "city": "",
+   "url": "https://sam.gov/workspace/contract/opp/c9439f2060544c60bf7974c94afc2181/view",
    "source": "SAM.gov award notice"
   },
   {
@@ -80,32 +93,6 @@
    "source": "SAM.gov award notice"
   },
   {
-   "holder": "C-A NATIVE CONSTRUCTORS INC",
-   "title": "SYNOPSIS OF AWARD FOR SITE IMPROVEMENTS, STILLHOUSE HOLLOW LAKE, TEXAS",
-   "vehicle": "Contract award",
-   "agency": "Dept Of Defense",
-   "naics": "238990",
-   "amount": 1041202.0,
-   "award_date": "2026-09-27",
-   "contract_number": "W9126G26CA049",
-   "city": "",
-   "url": "https://sam.gov/workspace/contract/opp/7e3582f030c44461a1571a70247156fd/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "C-A NATIVE CONSTRUCTORS INC",
-   "title": "W9126G26RA108",
-   "vehicle": "Contract award",
-   "agency": "Dept Of Defense",
-   "naics": "238990",
-   "amount": 872650.0,
-   "award_date": "2026-09-28",
-   "contract_number": "W9126G26CA051",
-   "city": "",
-   "url": "https://sam.gov/workspace/contract/opp/e356445f0f96400ab55038a4b6977d72/view",
-   "source": "SAM.gov award notice"
-  },
-  {
    "holder": "POWE AND ASSOCIATES INC",
    "title": "METC Microwave and Refrigerator Relocation and Storage",
    "vehicle": "Contract award",
@@ -155,6 +142,19 @@
    "contract_number": "12639526P0296",
    "city": "Reynosa",
    "url": "https://sam.gov/workspace/contract/opp/533c4d11cd6e42f4bfa10da627cc240f/view",
+   "source": "SAM.gov award notice"
+  },
+  {
+   "holder": "EL VALLE PEST CONTROL LLC",
+   "title": "Exterminating and Pest Control Services",
+   "vehicle": "Contract award",
+   "agency": "International Boundary And Water Commission: Us-Mexico",
+   "naics": "561710",
+   "amount": 27900.0,
+   "award_date": "2026-09-30",
+   "contract_number": "191BWC26P0093",
+   "city": "El Paso",
+   "url": "https://sam.gov/workspace/contract/opp/1615e98ad1b840d881f2614e3b52d184/view",
    "source": "SAM.gov award notice"
   }
  ]

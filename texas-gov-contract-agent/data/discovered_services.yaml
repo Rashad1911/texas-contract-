@@ -280,7 +280,7 @@ categories:
     source: known adjacent line
     seen_titles:
     - H342--CTX Annual Fire Extinguisher Inspection
-    last_seen: '2026-10-06'
+    last_seen: '2026-10-09'
   elevator:
     label: Elevator maintenance
     keywords:
@@ -324,3 +324,107 @@ categories:
     - J036--NTX Elevator Inspection | BASE + OPTIONS | 549 | NEED DATE 12.2026
     - Z2FE--CTX Chapel Window Repair/Replacement | NEED DATE
     last_seen: '2026-10-03'
+  public_health:
+    label: Public Health
+    keywords:
+    - public health
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified public health provider
+    related: []
+    first_seen: '2026-10-09'
+    times_seen: 2
+    examples:
+    - RFP - Gift Card Incentive Program for Harris County Public Health Services/Ryan
+      White Grant Administration (Ryan White Part A & B EHE)
+    - RFP - Ryan White Program Part A and Minority AIDS Initiative Services for Harris
+      County Public Health Services/Ryan White Grant Administration
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - RFP - Gift Card Incentive Program for Harris County Public Health Services/Ryan
+      White Grant Administration (Ryan White Part A & B EHE)
+    - RFP - Ryan White Program Part A and Minority AIDS Initiative Services for Harris
+      County Public Health Services/Ryan White Grant Administration
+    last_seen: '2026-10-09'
+  ryan_white:
+    label: Ryan White
+    keywords:
+    - ryan white
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified ryan white provider
+    related: []
+    first_seen: '2026-10-09'
+    times_seen: 2
+    examples:
+    - RFP - Gift Card Incentive Program for Harris County Public Health Services/Ryan
+      White Grant Administration (Ryan White Part A & B EHE)
+    - RFP - Ryan White Program Part A and Minority AIDS Initiative Services for Harris
+      County Public Health Services/Ryan White Grant Administration
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - RFP - Gift Card Incentive Program for Harris County Public Health Services/Ryan
+      White Grant Administration (Ryan White Part A & B EHE)
+    - RFP - Ryan White Program Part A and Minority AIDS Initiative Services for Harris
+      County Public Health Services/Ryan White Grant Administration
+    last_seen: '2026-10-09'
+  white_grant:
+    label: White Grant
+    keywords:
+    - white grant
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified white grant provider
+    related: []
+    first_seen: '2026-10-09'
+    times_seen: 2
+    examples:
+    - RFP - Gift Card Incentive Program for Harris County Public Health Services/Ryan
+      White Grant Administration (Ryan White Part A & B EHE)
+    - RFP - Ryan White Program Part A and Minority AIDS Initiative Services for Harris
+      County Public Health Services/Ryan White Grant Administration
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - RFP - Gift Card Incentive Program for Harris County Public Health Services/Ryan
+      White Grant Administration (Ryan White Part A & B EHE)
+    - RFP - Ryan White Program Part A and Minority AIDS Initiative Services for Harris
+      County Public Health Services/Ryan White Grant Administration
+    last_seen: '2026-10-09'
+  grant_administration:
+    label: Grant Administration
+    keywords:
+    - grant administration
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified grant administration provider
+    related: []
+    first_seen: '2026-10-09'
+    times_seen: 2
+    examples:
+    - RFP - Gift Card Incentive Program for Harris County Public Health Services/Ryan
+      White Grant Administration (Ryan White Part A & B EHE)
+    - RFP - Ryan White Program Part A and Minority AIDS Initiative Services for Harris
+      County Public Health Services/Ryan White Grant Administration
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - RFP - Gift Card Incentive Program for Harris County Public Health Services/Ryan
+      White Grant Administration (Ryan White Part A & B EHE)
+    - RFP - Ryan White Program Part A and Minority AIDS Initiative Services for Harris
+      County Public Health Services/Ryan White Grant Administration
+    last_seen: '2026-10-09'
