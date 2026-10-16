@@ -1,43 +1,17 @@
 {
- "generated_at": "2026-10-12T15:01:19.089342-05:00",
+ "generated_at": "2026-10-16T10:02:07.005637-05:00",
  "leads": [
   {
-   "holder": "BRADSHER, JAMES E",
-   "title": "V999--WHEELCHAIR 3 MONTH BRIDGE IDC CONTRACT",
-   "vehicle": "Contract award",
-   "agency": "Veterans Affairs, Department Of",
-   "naics": "485991",
-   "amount": 4939250.0,
-   "award_date": "2026-09-28",
-   "contract_number": "36C25726D0098",
-   "city": "",
-   "url": "https://sam.gov/workspace/contract/opp/c9439f2060544c60bf7974c94afc2181/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "ROCA GLOBAL BUILDERS LLC",
-   "title": "Award Notice - Bldg 3314, METC Furniture Relocation and Storage",
+   "holder": "E&C CAMPOS AND SONS LLC",
+   "title": "JBSA LAK and RND Laundry and Dry-Cleaning Service",
    "vehicle": "Contract award",
    "agency": "Dept Of Defense",
-   "naics": "484210",
-   "amount": 1735755.86,
-   "award_date": "2026-10-02",
-   "contract_number": "FA301627P0002",
+   "naics": "812320",
+   "amount": 5880775.17,
+   "award_date": "2026-10-15",
+   "contract_number": "FA301627D0003",
    "city": "0",
-   "url": "https://sam.gov/workspace/contract/opp/69269abf8c084b22bc88bf59f9c68265/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "EL VALLE PEST CONTROL LLC",
-   "title": "Exterminating and Pest Control Services",
-   "vehicle": "Contract award",
-   "agency": "International Boundary And Water Commission: Us-Mexico",
-   "naics": "561710",
-   "amount": 27900.0,
-   "award_date": "2026-09-30",
-   "contract_number": "191BWC26P0093",
-   "city": "El Paso",
-   "url": "https://sam.gov/workspace/contract/opp/1615e98ad1b840d881f2614e3b52d184/view",
+   "url": "https://sam.gov/workspace/contract/opp/71d66553b74c457c994794b797bee5a0/view",
    "source": "SAM.gov award notice"
   }
  ]

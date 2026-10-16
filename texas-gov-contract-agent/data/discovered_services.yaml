@@ -280,7 +280,7 @@ categories:
     source: known adjacent line
     seen_titles:
     - H342--CTX Annual Fire Extinguisher Inspection
-    last_seen: '2026-10-12'
+    last_seen: '2026-10-16'
   elevator:
     label: Elevator maintenance
     keywords:
@@ -428,3 +428,49 @@ categories:
     - RFP - Ryan White Program Part A and Minority AIDS Initiative Services for Harris
       County Public Health Services/Ryan White Grant Administration
     last_seen: '2026-10-09'
+  comprehensive_medical:
+    label: Comprehensive Medical
+    keywords:
+    - comprehensive medical
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified comprehensive medical provider
+    related: []
+    first_seen: '2026-10-16'
+    times_seen: 2
+    examples:
+    - Comprehensive Medical Services -FDC Houston
+    - Comprehensive Medical Services -FPC Bryan
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - Comprehensive Medical Services -FDC Houston
+    - Comprehensive Medical Services -FPC Bryan
+    last_seen: '2026-10-16'
+  construction_management:
+    label: Construction Management
+    keywords:
+    - construction management
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified construction management provider
+    related: []
+    first_seen: '2026-10-16'
+    times_seen: 2
+    examples:
+    - KBHCCD Construction Management, Engineering, and Inspection Services (CMEI)
+    - Request for Qualifications for Pre-Qualified List for Program Management Services
+      for Office of Bond and Construction Management
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - KBHCCD Construction Management, Engineering, and Inspection Services (CMEI)
+    - Request for Qualifications for Pre-Qualified List for Program Management Services
+      for Office of Bond and Construction Management
+    last_seen: '2026-10-16'
