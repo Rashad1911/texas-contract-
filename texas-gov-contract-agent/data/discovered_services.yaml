@@ -280,7 +280,7 @@ categories:
     source: known adjacent line
     seen_titles:
     - H342--CTX Annual Fire Extinguisher Inspection
-    last_seen: '2026-10-16'
+    last_seen: '2026-10-19'
   elevator:
     label: Elevator maintenance
     keywords:
@@ -294,14 +294,16 @@ categories:
     subcontractor: Qualified elevator maintenance provider
     related: []
     first_seen: '2026-10-03'
-    times_seen: 1
+    times_seen: 2
     examples:
     - J036--NTX Elevator Inspection | BASE + OPTIONS | 549 | NEED DATE 12.2026
-    approved: false
+    - WTX Elevator Inspections and Load Testing Services
+    approved: true
     source: known adjacent line
     seen_titles:
     - J036--NTX Elevator Inspection | BASE + OPTIONS | 549 | NEED DATE 12.2026
-    last_seen: '2026-10-03'
+    - WTX Elevator Inspections and Load Testing Services
+    last_seen: '2026-10-19'
   need_date:
     label: Need Date
     keywords:
@@ -474,3 +476,25 @@ categories:
     - Request for Qualifications for Pre-Qualified List for Program Management Services
       for Office of Bond and Construction Management
     last_seen: '2026-10-16'
+  load_testing:
+    label: Load Testing
+    keywords:
+    - load testing
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified load testing provider
+    related: []
+    first_seen: '2026-10-19'
+    times_seen: 2
+    examples:
+    - Aviation Support Equipment Load Testing
+    - WTX Elevator Inspections and Load Testing Services
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - Aviation Support Equipment Load Testing
+    - WTX Elevator Inspections and Load Testing Services
+    last_seen: '2026-10-19'

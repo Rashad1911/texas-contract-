@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-10-16T10:02:07.005637-05:00",
+ "generated_at": "2026-10-19T12:13:30.056389-05:00",
  "leads": [
+  {
+   "holder": "AML-AMERICAN MADE LOGISTICS",
+   "title": "Testing & Inspecting, Preventative Maintenance (PM), Corrective Repairs, and Service Calls for NTX VA Cogeneration and Boiler Chiller Plant",
+   "vehicle": "Contract award",
+   "agency": "Veterans Affairs, Department Of",
+   "naics": "238220",
+   "amount": 16980524.0,
+   "award_date": "2026-10-16",
+   "contract_number": "36C25727C0006",
+   "city": "Dallas",
+   "url": "https://sam.gov/workspace/contract/opp/383831ce90b04d8eaea50c0e0a87ab19/view",
+   "source": "SAM.gov award notice"
+  },
   {
    "holder": "E&C CAMPOS AND SONS LLC",
    "title": "JBSA LAK and RND Laundry and Dry-Cleaning Service",
