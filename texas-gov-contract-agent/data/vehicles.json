@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-25T09:36:39.233852-05:00",
+ "generated_at": "2026-10-28T11:51:35.665221-05:00",
  "leads": [
   {
    "holder": "AML-AMERICAN MADE LOGISTICS",
@@ -15,16 +15,16 @@
    "source": "SAM.gov award notice"
   },
   {
-   "holder": "E&C CAMPOS AND SONS LLC",
-   "title": "JBSA LAK and RND Laundry and Dry-Cleaning Service",
+   "holder": "GREENLIGHT GROUP LLC",
+   "title": "Restroom and Shower Trailer Rental",
    "vehicle": "Contract award",
    "agency": "Dept Of Defense",
-   "naics": "812320",
-   "amount": 5880775.17,
-   "award_date": "2026-10-15",
-   "contract_number": "FA301627D0003",
-   "city": "0",
-   "url": "https://sam.gov/workspace/contract/opp/71d66553b74c457c994794b797bee5a0/view",
+   "naics": "562991",
+   "amount": 1515756.48,
+   "award_date": "2026-10-27",
+   "contract_number": "FA301627P0006",
+   "city": "San Antonio",
+   "url": "https://sam.gov/workspace/contract/opp/6a9206e5ee9c4fa9a116c6bd0225611d/view",
    "source": "SAM.gov award notice"
   }
  ]
