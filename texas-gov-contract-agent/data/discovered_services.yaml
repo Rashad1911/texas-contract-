@@ -498,3 +498,31 @@ categories:
     - Aviation Support Equipment Load Testing
     - WTX Elevator Inspections and Load Testing Services
     last_seen: '2026-10-19'
+  air_force:
+    label: Air Force
+    keywords:
+    - air force
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified air force provider
+    related: []
+    first_seen: '2026-10-31'
+    times_seen: 2
+    examples:
+    - NEW - Air Force Installation and Mission Support Center (AFIMSC) Streamlining
+      Procurement for Effective Execution & Delivery (SPEED) Commercial Solutions
+      Opening (CSO)
+    - Privatization Management Programs (PMP) for the Air Force Housing, Enhanced
+      Use Lease, Lodging, and Utilities (HELU) Privatization
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - NEW - Air Force Installation and Mission Support Center (AFIMSC) Streamlining
+      Procurement for Effective Execution & Delivery (SPEED) Commercial Solutions
+      Opening (CSO)
+    - Privatization Management Programs (PMP) for the Air Force Housing, Enhanced
+      Use Lease, Lodging, and Utilities (HELU) Privatization
+    last_seen: '2026-10-31'

@@ -1,19 +1,6 @@
 {
- "generated_at": "2026-10-28T11:51:35.665221-05:00",
+ "generated_at": "2026-10-31T10:54:23.058001-05:00",
  "leads": [
-  {
-   "holder": "AML-AMERICAN MADE LOGISTICS",
-   "title": "Testing & Inspecting, Preventative Maintenance (PM), Corrective Repairs, and Service Calls for NTX VA Cogeneration and Boiler Chiller Plant",
-   "vehicle": "Contract award",
-   "agency": "Veterans Affairs, Department Of",
-   "naics": "238220",
-   "amount": 16980524.0,
-   "award_date": "2026-10-16",
-   "contract_number": "36C25727C0006",
-   "city": "Dallas",
-   "url": "https://sam.gov/workspace/contract/opp/383831ce90b04d8eaea50c0e0a87ab19/view",
-   "source": "SAM.gov award notice"
-  },
   {
    "holder": "GREENLIGHT GROUP LLC",
    "title": "Restroom and Shower Trailer Rental",
@@ -25,6 +12,32 @@
    "contract_number": "FA301627P0006",
    "city": "San Antonio",
    "url": "https://sam.gov/workspace/contract/opp/6a9206e5ee9c4fa9a116c6bd0225611d/view",
+   "source": "SAM.gov award notice"
+  },
+  {
+   "holder": "DBC-MCA JV, LLC",
+   "title": "Z1DA--FY27 NRM Project 549A4-26-405 Replace Heat Exchanger Bonham",
+   "vehicle": "Contract award",
+   "agency": "Veterans Affairs, Department Of",
+   "naics": "238220",
+   "amount": 1418449.34,
+   "award_date": "2026-10-30",
+   "contract_number": "36C25727C0014",
+   "city": "",
+   "url": "https://sam.gov/workspace/contract/opp/686b03f23b044f56814e2b35d639394b/view",
+   "source": "SAM.gov award notice"
+  },
+  {
+   "holder": "LINDE INC.",
+   "title": "68--Tank Hot Fill",
+   "vehicle": "Contract award",
+   "agency": "Dept Of Defense",
+   "naics": "493110",
+   "amount": 484064.0,
+   "award_date": "2026-10-29",
+   "contract_number": "SPE60127D1501",
+   "city": "",
+   "url": "https://sam.gov/workspace/contract/opp/74a0649a62274ca28b8d210e583825ee/view",
    "source": "SAM.gov award notice"
   }
  ]
