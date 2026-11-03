@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T10:54:23.058001-05:00",
+ "generated_at": "2026-11-03T12:06:25.499757-06:00",
  "leads": [
   {
    "holder": "GREENLIGHT GROUP LLC",
@@ -38,6 +38,19 @@
    "contract_number": "SPE60127D1501",
    "city": "",
    "url": "https://sam.gov/workspace/contract/opp/74a0649a62274ca28b8d210e583825ee/view",
+   "source": "SAM.gov award notice"
+  },
+  {
+   "holder": "VALCORP ENTERPRISES LLC",
+   "title": "CTX Steam Repair",
+   "vehicle": "Contract award",
+   "agency": "Veterans Affairs, Department Of",
+   "naics": "238220",
+   "amount": 60498.2,
+   "award_date": "2026-11-22",
+   "contract_number": "36C25727P0005",
+   "city": "Temple",
+   "url": "https://sam.gov/workspace/contract/opp/b3502fe3c99f4739bd20de9ce7fb224f/view",
    "source": "SAM.gov award notice"
   }
  ]
