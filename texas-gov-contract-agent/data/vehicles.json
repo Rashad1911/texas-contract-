@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T12:06:25.499757-06:00",
+ "generated_at": "2026-11-06T11:43:42.201527-06:00",
  "leads": [
   {
    "holder": "GREENLIGHT GROUP LLC",
@@ -25,6 +25,19 @@
    "contract_number": "36C25727C0014",
    "city": "",
    "url": "https://sam.gov/workspace/contract/opp/686b03f23b044f56814e2b35d639394b/view",
+   "source": "SAM.gov award notice"
+  },
+  {
+   "holder": "FORDHALL TECHNOLOGY SOLUTIONS LLC",
+   "title": "Non-Critical Reusable Medical Equipment (NCRME) Cleaning Services",
+   "vehicle": "Contract award",
+   "agency": "Veterans Affairs, Department Of",
+   "naics": "561720",
+   "amount": 1028227.68,
+   "award_date": "2026-11-04",
+   "contract_number": "36C25727P0012",
+   "city": "San Antonio",
+   "url": "https://sam.gov/workspace/contract/opp/e54620138f4041648034899c60c1f0fb/view",
    "source": "SAM.gov award notice"
   },
   {

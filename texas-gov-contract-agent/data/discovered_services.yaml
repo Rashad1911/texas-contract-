@@ -526,3 +526,79 @@ categories:
     - Privatization Management Programs (PMP) for the Air Force Housing, Enhanced
       Use Lease, Lodging, and Utilities (HELU) Privatization
     last_seen: '2026-10-31'
+  interpretation:
+    label: Interpretation & translation
+    keywords:
+    - interpretation
+    - translation
+    - interpreter
+    naics: []
+    startup: low
+    outsource: high
+    margin: medium
+    licenses: []
+    subcontractor: Qualified interpretation & translation provider
+    related: []
+    first_seen: '2026-11-06'
+    times_seen: 1
+    examples:
+    - RFP Interpretation and Translation Services
+    approved: false
+    source: known adjacent line
+    seen_titles:
+    - RFP Interpretation and Translation Services
+    last_seen: '2026-11-06'
+  life_safety:
+    label: Life Safety
+    keywords:
+    - life safety
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified life safety provider
+    related: []
+    first_seen: '2026-11-06'
+    times_seen: 2
+    examples:
+    - CTX Life Safety Assessment and Fire Damper Inspection
+    - RFP - Inspection, Testing, and Maintenance of the Fire and Life Safety Systems
+      Equipment and Related Items for Harris County
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - CTX Life Safety Assessment and Fire Damper Inspection
+    - RFP - Inspection, Testing, and Maintenance of the Fire and Life Safety Systems
+      Equipment and Related Items for Harris County
+    last_seen: '2026-11-06'
+  professional_engineering:
+    label: Professional Engineering
+    keywords:
+    - professional engineering
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified professional engineering provider
+    related: []
+    first_seen: '2026-11-06'
+    times_seen: 2
+    examples:
+    - PW RFQ for Professional Engineering Design and Consultant Services for Delivery
+      of Studies, Planning, Engineering and Design for Projects with (Federal/State)
+      Grant Funds
+    - RFSQ - Professional Engineering Services Vendor Pool for Traffic Engineering
+      Services for the Development and Implementation of Traffic & Mobility Infrastructure
+      Projects for Harris County Office of the County Engineer
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - PW RFQ for Professional Engineering Design and Consultant Services for Delivery
+      of Studies, Planning, Engineering and Design for Projects with (Federal/State)
+      Grant Funds
+    - RFSQ - Professional Engineering Services Vendor Pool for Traffic Engineering
+      Services for the Development and Implementation of Traffic & Mobility Infrastructure
+      Projects for Harris County Office of the County Engineer
+    last_seen: '2026-11-06'
