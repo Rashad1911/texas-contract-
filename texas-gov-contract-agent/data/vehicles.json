@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-11-06T11:43:42.201527-06:00",
+ "generated_at": "2026-11-09T15:08:41.180623-06:00",
  "leads": [
   {
-   "holder": "GREENLIGHT GROUP LLC",
-   "title": "Restroom and Shower Trailer Rental",
+   "holder": "FLOWSENSE, LLC",
+   "title": "J045--Install Chill Water System Filtration & Steam Condensate Polisher",
    "vehicle": "Contract award",
-   "agency": "Dept Of Defense",
-   "naics": "562991",
-   "amount": 1515756.48,
-   "award_date": "2026-10-27",
-   "contract_number": "FA301627P0006",
-   "city": "San Antonio",
-   "url": "https://sam.gov/workspace/contract/opp/6a9206e5ee9c4fa9a116c6bd0225611d/view",
+   "agency": "Veterans Affairs, Department Of",
+   "naics": "238220",
+   "amount": 1589287.0,
+   "award_date": "2026-11-06",
+   "contract_number": "36C25727P0035",
+   "city": "Dallas",
+   "url": "https://sam.gov/workspace/contract/opp/19e57787073647408e8979556a81301d/view",
    "source": "SAM.gov award notice"
   },
   {
@@ -41,16 +41,16 @@
    "source": "SAM.gov award notice"
   },
   {
-   "holder": "LINDE INC.",
-   "title": "68--Tank Hot Fill",
+   "holder": "BRAND CONSTRUCTION LLC",
+   "title": "J041--Emergency CLC HVAC System Repair",
    "vehicle": "Contract award",
-   "agency": "Dept Of Defense",
-   "naics": "493110",
-   "amount": 484064.0,
-   "award_date": "2026-10-29",
-   "contract_number": "SPE60127D1501",
+   "agency": "Veterans Affairs, Department Of",
+   "naics": "238220",
+   "amount": 585607.68,
+   "award_date": "2026-07-16",
+   "contract_number": "36C25726P0614",
    "city": "",
-   "url": "https://sam.gov/workspace/contract/opp/74a0649a62274ca28b8d210e583825ee/view",
+   "url": "https://sam.gov/workspace/contract/opp/1222d2c8edac4877b1d1e8a5712c867d/view",
    "source": "SAM.gov award notice"
   },
   {
@@ -64,6 +64,19 @@
    "contract_number": "36C25727P0005",
    "city": "Temple",
    "url": "https://sam.gov/workspace/contract/opp/b3502fe3c99f4739bd20de9ce7fb224f/view",
+   "source": "SAM.gov award notice"
+  },
+  {
+   "holder": "RNDI COMPANIES, INC.",
+   "title": "NOTICE OF AWARD: Region VI Asbestos Abatement Blanket Purchase Agreement (BPA)",
+   "vehicle": "Blanket purchase agreement (BPA)",
+   "agency": "Homeland Security, Department Of",
+   "naics": "562910",
+   "amount": 0.0,
+   "award_date": "2026-09-24",
+   "contract_number": "70FBR626A00000002",
+   "city": "Denton",
+   "url": "https://sam.gov/workspace/contract/opp/007f6368ec6a4759ace95c4c4db61953/view",
    "source": "SAM.gov award notice"
   }
  ]
