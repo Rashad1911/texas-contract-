@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-11-09T15:08:41.180623-06:00",
+ "generated_at": "2026-11-13T12:10:43.110193-06:00",
  "leads": [
+  {
+   "holder": "NASCENCE GROUP LLC",
+   "title": "Consolidated Janitorial Services - South Florida Group Locations",
+   "vehicle": "Contract award",
+   "agency": "Transportation, Department Of",
+   "naics": "561720",
+   "amount": 2995452.28,
+   "award_date": "2026-11-10",
+   "contract_number": "697DCK-27-C-00017",
+   "city": "",
+   "url": "https://sam.gov/workspace/contract/opp/5796ca571dd041fe8617594f3b98075e/view",
+   "source": "SAM.gov award notice"
+  },
   {
    "holder": "FLOWSENSE, LLC",
    "title": "J045--Install Chill Water System Filtration & Steam Condensate Polisher",
@@ -12,19 +25,6 @@
    "contract_number": "36C25727P0035",
    "city": "Dallas",
    "url": "https://sam.gov/workspace/contract/opp/19e57787073647408e8979556a81301d/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "DBC-MCA JV, LLC",
-   "title": "Z1DA--FY27 NRM Project 549A4-26-405 Replace Heat Exchanger Bonham",
-   "vehicle": "Contract award",
-   "agency": "Veterans Affairs, Department Of",
-   "naics": "238220",
-   "amount": 1418449.34,
-   "award_date": "2026-10-30",
-   "contract_number": "36C25727C0014",
-   "city": "",
-   "url": "https://sam.gov/workspace/contract/opp/686b03f23b044f56814e2b35d639394b/view",
    "source": "SAM.gov award notice"
   },
   {
@@ -41,6 +41,19 @@
    "source": "SAM.gov award notice"
   },
   {
+   "holder": "WARRIOR DYNAMICS LLC",
+   "title": "FCC Beaumont- Replace FS Chiller",
+   "vehicle": "Contract award",
+   "agency": "Justice, Department Of",
+   "naics": "238220",
+   "amount": 594966.0,
+   "award_date": "2026-11-09",
+   "contract_number": "15BBNF27C50200001",
+   "city": "Beaumont",
+   "url": "https://sam.gov/workspace/contract/opp/f8f27dd811d145109d2501981c6d7cf8/view",
+   "source": "SAM.gov award notice"
+  },
+  {
    "holder": "BRAND CONSTRUCTION LLC",
    "title": "J041--Emergency CLC HVAC System Repair",
    "vehicle": "Contract award",
@@ -54,16 +67,16 @@
    "source": "SAM.gov award notice"
   },
   {
-   "holder": "VALCORP ENTERPRISES LLC",
-   "title": "CTX Steam Repair",
+   "holder": "Texas Chiller Systems",
+   "title": "Chiller 1 Micro-board Removal & Replacement, B3260 JBSA Fort Sam Houston",
    "vehicle": "Contract award",
-   "agency": "Veterans Affairs, Department Of",
+   "agency": "Dept Of Defense",
    "naics": "238220",
-   "amount": 60498.2,
-   "award_date": "2026-11-22",
-   "contract_number": "36C25727P0005",
-   "city": "Temple",
-   "url": "https://sam.gov/workspace/contract/opp/b3502fe3c99f4739bd20de9ce7fb224f/view",
+   "amount": 20880.0,
+   "award_date": "2026-11-04",
+   "contract_number": "FA301627P0005",
+   "city": "0",
+   "url": "https://sam.gov/workspace/contract/opp/065181b7a4d246ad807dc5ef0b1551a8/view",
    "source": "SAM.gov award notice"
   },
   {

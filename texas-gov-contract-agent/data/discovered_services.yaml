@@ -547,7 +547,7 @@ categories:
     source: known adjacent line
     seen_titles:
     - RFP Interpretation and Translation Services
-    last_seen: '2026-11-09'
+    last_seen: '2026-11-13'
   life_safety:
     label: Life Safety
     keywords:
@@ -602,3 +602,63 @@ categories:
       Services for the Development and Implementation of Traffic & Mobility Infrastructure
       Projects for Harris County Office of the County Engineer
     last_seen: '2026-11-06'
+  toll_road:
+    label: Toll Road
+    keywords:
+    - toll road
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified toll road provider
+    related: []
+    first_seen: '2026-11-13'
+    times_seen: 3
+    examples:
+    - RFP - Enterprise VMware Software Products and Services for the Harris County
+      Toll Road Authority
+    - RFP - Wide Area Network Refresh, Maintenance and Support Services for the Harris
+      County Toll Road Authority
+    - RFP- Wrong-Way Detection Systems, Maintenance, Repair and Testing Services for
+      the Harris County Toll Road Authority
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - RFP - Enterprise VMware Software Products and Services for the Harris County
+      Toll Road Authority
+    - RFP - Wide Area Network Refresh, Maintenance and Support Services for the Harris
+      County Toll Road Authority
+    - RFP- Wrong-Way Detection Systems, Maintenance, Repair and Testing Services for
+      the Harris County Toll Road Authority
+    last_seen: '2026-11-13'
+  road_authority:
+    label: Road Authority
+    keywords:
+    - road authority
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified road authority provider
+    related: []
+    first_seen: '2026-11-13'
+    times_seen: 3
+    examples:
+    - RFP - Enterprise VMware Software Products and Services for the Harris County
+      Toll Road Authority
+    - RFP - Wide Area Network Refresh, Maintenance and Support Services for the Harris
+      County Toll Road Authority
+    - RFP- Wrong-Way Detection Systems, Maintenance, Repair and Testing Services for
+      the Harris County Toll Road Authority
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - RFP - Enterprise VMware Software Products and Services for the Harris County
+      Toll Road Authority
+    - RFP - Wide Area Network Refresh, Maintenance and Support Services for the Harris
+      County Toll Road Authority
+    - RFP- Wrong-Way Detection Systems, Maintenance, Repair and Testing Services for
+      the Harris County Toll Road Authority
+    last_seen: '2026-11-13'
