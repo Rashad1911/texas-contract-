@@ -547,7 +547,7 @@ categories:
     source: known adjacent line
     seen_titles:
     - RFP Interpretation and Translation Services
-    last_seen: '2026-11-13'
+    last_seen: '2026-11-16'
   life_safety:
     label: Life Safety
     keywords:
@@ -662,3 +662,27 @@ categories:
     - RFP- Wrong-Way Detection Systems, Maintenance, Repair and Testing Services for
       the Harris County Toll Road Authority
     last_seen: '2026-11-13'
+  related_items:
+    label: Related Items
+    keywords:
+    - related items
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified related items provider
+    related: []
+    first_seen: '2026-11-16'
+    times_seen: 2
+    examples:
+    - ITB - Sports Field Lighting Inspections, Maintenance, and Related Items for
+      Harris County Precinct 4
+    - RFP HVAC Services and Related Items
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - ITB - Sports Field Lighting Inspections, Maintenance, and Related Items for
+      Harris County Precinct 4
+    - RFP HVAC Services and Related Items
+    last_seen: '2026-11-16'
