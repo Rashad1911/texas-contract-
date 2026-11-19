@@ -1,6 +1,19 @@
 {
- "generated_at": "2026-11-16T14:42:33.145162-06:00",
+ "generated_at": "2026-11-19T13:12:50.991574-06:00",
  "leads": [
+  {
+   "holder": "KCorp Building Xpress, Inc.",
+   "title": "Grounds Maintenance Contract",
+   "vehicle": "Contract award",
+   "agency": "Dept Of Defense",
+   "naics": "561730",
+   "amount": 4862168.24,
+   "award_date": "2026-11-06",
+   "contract_number": "FA466127P0002",
+   "city": "Dyess Afb",
+   "url": "https://sam.gov/workspace/contract/opp/b69345cffa004fa28e489c7f1a6875c1/view",
+   "source": "SAM.gov award notice"
+  },
   {
    "holder": "NASCENCE GROUP LLC",
    "title": "Consolidated Janitorial Services - South Florida Group Locations",
@@ -12,19 +25,6 @@
    "contract_number": "697DCK-27-C-00017",
    "city": "",
    "url": "https://sam.gov/workspace/contract/opp/5796ca571dd041fe8617594f3b98075e/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "FLOWSENSE, LLC",
-   "title": "J045--Install Chill Water System Filtration & Steam Condensate Polisher",
-   "vehicle": "Contract award",
-   "agency": "Veterans Affairs, Department Of",
-   "naics": "238220",
-   "amount": 1589287.0,
-   "award_date": "2026-11-06",
-   "contract_number": "36C25727P0035",
-   "city": "Dallas",
-   "url": "https://sam.gov/workspace/contract/opp/19e57787073647408e8979556a81301d/view",
    "source": "SAM.gov award notice"
   },
   {
@@ -41,42 +41,16 @@
    "source": "SAM.gov award notice"
   },
   {
-   "holder": "BRAND CONSTRUCTION LLC",
-   "title": "J041--Emergency CLC HVAC System Repair",
+   "holder": "DOUBLE BRONZE STAR MARKETING AND CONSULTING, INC",
+   "title": "S207--Amarillo Pest Management",
    "vehicle": "Contract award",
    "agency": "Veterans Affairs, Department Of",
-   "naics": "238220",
-   "amount": 585607.68,
-   "award_date": "2026-07-16",
-   "contract_number": "36C25726P0614",
+   "naics": "561710",
+   "amount": 547020.0,
+   "award_date": "2026-11-18",
+   "contract_number": "36C25727P0018",
    "city": "",
-   "url": "https://sam.gov/workspace/contract/opp/1222d2c8edac4877b1d1e8a5712c867d/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "Texas Chiller Systems",
-   "title": "Chiller 1 Micro-board Removal & Replacement, B3260 JBSA Fort Sam Houston",
-   "vehicle": "Contract award",
-   "agency": "Dept Of Defense",
-   "naics": "238220",
-   "amount": 20880.0,
-   "award_date": "2026-11-04",
-   "contract_number": "FA301627P0005",
-   "city": "0",
-   "url": "https://sam.gov/workspace/contract/opp/065181b7a4d246ad807dc5ef0b1551a8/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "RNDI COMPANIES, INC.",
-   "title": "NOTICE OF AWARD: Region VI Asbestos Abatement Blanket Purchase Agreement (BPA)",
-   "vehicle": "Blanket purchase agreement (BPA)",
-   "agency": "Homeland Security, Department Of",
-   "naics": "562910",
-   "amount": 0.0,
-   "award_date": "2026-09-24",
-   "contract_number": "70FBR626A00000002",
-   "city": "Denton",
-   "url": "https://sam.gov/workspace/contract/opp/007f6368ec6a4759ace95c4c4db61953/view",
+   "url": "https://sam.gov/workspace/contract/opp/4da05c4c0eae4b779adc91edd99f80af/view",
    "source": "SAM.gov award notice"
   }
  ]
