@@ -547,7 +547,7 @@ categories:
     source: known adjacent line
     seen_titles:
     - RFP Interpretation and Translation Services
-    last_seen: '2026-11-19'
+    last_seen: '2026-11-22'
   life_safety:
     label: Life Safety
     keywords:
@@ -686,3 +686,29 @@ categories:
       Harris County Precinct 4
     - RFP HVAC Services and Related Items
     last_seen: '2026-11-16'
+  sheriff_office:
+    label: Sheriff Office
+    keywords:
+    - sheriff office
+    naics: []
+    startup: medium
+    outsource: medium
+    margin: medium
+    licenses: []
+    subcontractor: Qualified sheriff office provider
+    related: []
+    first_seen: '2026-11-22'
+    times_seen: 2
+    examples:
+    - RFP - Maintenance, Support, Hosting and Enhancements for a Situational Awareness
+      Solution for the Harris County Sheriff’s Office (Port Security Grant)
+    - RFP - Satellite and Cable Television Service Provider for Harris County Sheriff's
+      Office
+    approved: true
+    source: recurring phrase
+    seen_titles:
+    - RFP - Maintenance, Support, Hosting and Enhancements for a Situational Awareness
+      Solution for the Harris County Sheriff’s Office (Port Security Grant)
+    - RFP - Satellite and Cable Television Service Provider for Harris County Sheriff's
+      Office
+    last_seen: '2026-11-22'

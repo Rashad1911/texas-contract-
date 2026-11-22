@@ -1,19 +1,6 @@
 {
- "generated_at": "2026-11-19T13:12:50.991574-06:00",
+ "generated_at": "2026-11-22T12:05:43.649327-06:00",
  "leads": [
-  {
-   "holder": "KCorp Building Xpress, Inc.",
-   "title": "Grounds Maintenance Contract",
-   "vehicle": "Contract award",
-   "agency": "Dept Of Defense",
-   "naics": "561730",
-   "amount": 4862168.24,
-   "award_date": "2026-11-06",
-   "contract_number": "FA466127P0002",
-   "city": "Dyess Afb",
-   "url": "https://sam.gov/workspace/contract/opp/b69345cffa004fa28e489c7f1a6875c1/view",
-   "source": "SAM.gov award notice"
-  },
   {
    "holder": "NASCENCE GROUP LLC",
    "title": "Consolidated Janitorial Services - South Florida Group Locations",
@@ -25,19 +12,6 @@
    "contract_number": "697DCK-27-C-00017",
    "city": "",
    "url": "https://sam.gov/workspace/contract/opp/5796ca571dd041fe8617594f3b98075e/view",
-   "source": "SAM.gov award notice"
-  },
-  {
-   "holder": "WARRIOR DYNAMICS LLC",
-   "title": "FCC Beaumont- Replace FS Chiller",
-   "vehicle": "Contract award",
-   "agency": "Justice, Department Of",
-   "naics": "238220",
-   "amount": 594966.0,
-   "award_date": "2026-11-09",
-   "contract_number": "15BBNF27C50200001",
-   "city": "Beaumont",
-   "url": "https://sam.gov/workspace/contract/opp/f8f27dd811d145109d2501981c6d7cf8/view",
    "source": "SAM.gov award notice"
   },
   {
