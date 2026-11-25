@@ -1,17 +1,43 @@
 {
- "generated_at": "2026-11-22T12:05:43.649327-06:00",
+ "generated_at": "2026-11-25T14:15:11.147359-06:00",
  "leads": [
   {
+   "holder": "SENECA FEDERAL SOLUTIONS, LLC",
+   "title": "Replace Fire Suppression- Multiple Sites",
+   "vehicle": "Contract award",
+   "agency": "Justice, Department Of",
+   "naics": "238220",
+   "amount": 8596348.09,
+   "award_date": "2026-11-24",
+   "contract_number": "15BBNF27C70000002",
+   "city": "Fort Worth",
+   "url": "https://sam.gov/workspace/contract/opp/4be089a724a64da8b26574bdbed609ff/view",
+   "source": "SAM.gov award notice"
+  },
+  {
    "holder": "NASCENCE GROUP LLC",
-   "title": "Consolidated Janitorial Services - South Florida Group Locations",
+   "title": "Consolidated Landscaping / Grounds Services for MIA District",
    "vehicle": "Contract award",
    "agency": "Transportation, Department Of",
-   "naics": "561720",
-   "amount": 2995452.28,
-   "award_date": "2026-11-10",
-   "contract_number": "697DCK-27-C-00017",
+   "naics": "561730",
+   "amount": 2201959.39,
+   "award_date": "2026-11-20",
+   "contract_number": "697DCK-27-C-00040",
    "city": "",
-   "url": "https://sam.gov/workspace/contract/opp/5796ca571dd041fe8617594f3b98075e/view",
+   "url": "https://sam.gov/workspace/contract/opp/699e036ccf0844b0b75c98dbfa820d10/view",
+   "source": "SAM.gov award notice"
+  },
+  {
+   "holder": "M.G.M. COMPUTER SYSTEM INC.",
+   "title": "J035-- Patient Elopement Installation Upgrade",
+   "vehicle": "Contract award",
+   "agency": "Veterans Affairs, Department Of",
+   "naics": "238210",
+   "amount": 644797.1,
+   "award_date": "2026-11-24",
+   "contract_number": "36C25727P0063",
+   "city": "",
+   "url": "https://sam.gov/workspace/contract/opp/9b312d2f6c82426880c78bf728249bd7/view",
    "source": "SAM.gov award notice"
   },
   {

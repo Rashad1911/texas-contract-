@@ -547,7 +547,7 @@ categories:
     source: known adjacent line
     seen_titles:
     - RFP Interpretation and Translation Services
-    last_seen: '2026-11-22'
+    last_seen: '2026-11-25'
   life_safety:
     label: Life Safety
     keywords:
@@ -698,12 +698,13 @@ categories:
     subcontractor: Qualified sheriff office provider
     related: []
     first_seen: '2026-11-22'
-    times_seen: 2
+    times_seen: 3
     examples:
     - RFP - Maintenance, Support, Hosting and Enhancements for a Situational Awareness
       Solution for the Harris County Sheriff’s Office (Port Security Grant)
     - RFP - Satellite and Cable Television Service Provider for Harris County Sheriff's
       Office
+    - Food Services for Sheriff's Office
     approved: true
     source: recurring phrase
     seen_titles:
@@ -711,4 +712,5 @@ categories:
       Solution for the Harris County Sheriff’s Office (Port Security Grant)
     - RFP - Satellite and Cable Television Service Provider for Harris County Sheriff's
       Office
-    last_seen: '2026-11-22'
+    - Food Services for Sheriff's Office
+    last_seen: '2026-11-25'
